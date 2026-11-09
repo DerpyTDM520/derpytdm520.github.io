@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Sheng Xing：AI Agent 工程、跨平台软件、数据研究及游戏系统作品集。">
+  <title>Sheng Xing | AI Agent · 软件系统 · 数据研究</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header><div class="container">
+  <a class="brand" href="#top">SX<span style="color:#346de3">.</span></a>
+  <nav aria-label="目录">
+    <a href="#projects">技术项目</a><a href="#research">论文成果</a><a href="#about">背景</a>
+    <a href="index.html" lang="en">English</a>
+  </nav>
+</div></header>
+<main id="top">
+<section class="hero"><div class="container">
+  <div class="kicker">SHENG XING · AI AGENTS & SOFTWARE SYSTEMS</div>
+  <h1>从 AI 工具到交互产品。<br>让技术落地，让结果可验证。</h1>
+  <p class="lead">我以 AI Agent 工具链和跨平台软件研发为主线，也持续尝试浏览器交互与游戏系统设计。我的工作重点是把实际需求拆解成可运行的模块，以工具集成、自动化测试和清晰的证据复盘推进迭代。</p>
+  <div class="stack">
+    <span class="pill">AI Agent · MCP/Skills</span>
+    <span class="pill">Python · TypeScript · SQLite</span>
+    <span class="pill">跨平台客户端</span><span class="pill">Godot · Unreal Engine</span>
+    <span class="pill">数学建模与纵向数据分析</span>
+  </div>
+  <div class="actions">
+    <a class="button primary" href="#projects">查看代表项目</a>
+    <a class="button" href="https://github.com/DerpyTDM520" target="_blank" rel="noopener noreferrer">GitHub 主页</a>
+    <a class="button" href="#research">论文与研究</a>
+  </div>
+  <p class="small-meta">现居山东济南 · 关注中国大陆外企 AI/软件/数据相关岗位 · 联系方式按申请需要提供，不在公开网页显示。</p>
+</div></section>
+
+<section class="section" id="projects"><div class="container">
+  <div class="section-heading"><div>
+    <div class="kicker">SELECTED WORK · 精选案例</div>
+    <h2>三条主线，六个项目案例</h2>
+    <p class="section-desc">AI 工具与自动化、跨平台与 Web 产品、交互/游戏原型，共同体现需求拆解、系统集成与质量验证。项目公开版本只展示可核查的事实，不暴露私有源码、账号或未清权资源。</p>
+  </div></div>
+  <div class="cards">
+<article class="card">
+  <div class="card-top"><span class="category">01 · AI AGENT 系统</span><span class="status">个人研发</span></div>
+  <h3>AgentStudio · AI Agent 工具与研发系统</h3>
+  <p>围绕模型推理、MCP/Skills、项目记忆和工具执行构建本地 Agent 工作流，重点关注任务可控、结果可验证和个人数据保护。</p>
+  <ul class="keypoints">
+    <li>在开源基础上自行扩展部分 MCP/Skills 工具、记忆检索和任务权限控制。</li>
+    <li>为模型与工具调用设计错误处理、回归检查和执行记录，区分模拟与实际运行。</li>
+    <li>探索本地推理与按需云端 API 接入的性能、成本和隐私边界。</li>
+  </ul>
+  <div class="case-link">可提供脱敏架构与验证摘要；私有工程和个人记忆库不公开。</div>
+</article>
+<article class="card">
+  <div class="card-top"><span class="category">02 · 跨平台应用</span><span class="status">研发中</span></div>
+  <h3>NotePenzo · 笔琢与 Mellie（小绯）</h3>
+  <p>基于授权软件底座开发跨平台笔记与 AI 助手产品，围绕笔记数据、历史版本、交互状态和多轮记忆开展研发。</p>
+  <ul class="keypoints">
+    <li>组织 iPadOS、Android、Windows 原生模块与共用数据协议的 AI 协作研发。</li>
+    <li>设计内容寻址、历史恢复和助手记忆机制，并开展回归与体验测试。</li>
+    <li>研发角色化助手小绯的互动状态、对话管理与低干扰反馈。</li>
+  </ul>
+  <div class="case-link">项目仍在开发；不把模拟器测试写成全平台正式发布。</div>
+</article>
+<article class="card">
+  <div class="card-top"><span class="category">03 · 浏览器自动化</span><span class="status">受控原型</span></div>
+  <h3>CareerPilot · 证据驱动的求职 Agent</h3>
+  <p>从真实岗位来源、候选人事实核验和本地加密档案出发，构建跨招聘系统的申请准备及审核工作流。</p>
+  <ul class="keypoints">
+    <li>整理公开 ATS 岗位数据，并区分中国区外企官方入口和第三方渠道。</li>
+    <li>使用 Playwright 验证离线多步骤表单、选项选择和简历附件流程。</li>
+    <li>将实时网页操作、文件上传和最终提交分为独立授权阶段，防止误投递。</li>
+  </ul>
+  <div class="case-link">离线表单测试已完成；不宣称已实现跨官网自动投递。</div>
+</article>
+<article class="card">
+  <div class="card-top"><span class="category">04 · 游戏系统设计</span><span class="status">个人原型</span></div>
+  <h3>Godot / Unreal · 经济模拟与战斗成长</h3>
+  <p>围绕 Godot 经济与交互模拟、Unreal Engine 尸潮射击原型，设计规则、技能成长、数值机制与验收流程。</p>
+  <ul class="keypoints">
+    <li>设计游戏内商店、经济交易、概率与反馈机制及系统交互。</li>
+    <li>构建击杀积分、技能升级、场景推进等动作游戏机制与测试用例。</li>
+    <li>将原创玩法设计、素材适配和 AI 协作开发结合，关注可玩性与交付证据。</li>
+  </ul>
+  <div class="case-link">公开展示仅使用自有或已核实可传播的游戏画面与音效。</div>
+</article>
+<article class="card">
+  <div class="card-top"><span class="category">05 · Web 交互产品</span><span class="status">本地网页原型</span></div>
+  <h3>Mimi Arcana · 塔罗与角色互动网页</h3>
+  <p>本地实现的塔罗主题网页原型，结合卡牌交互、前端多区域界面、双语切换、角色 Lumia 与宠物 Poppu 的互动实验。</p>
+  <ul class="keypoints">
+    <li>组织网页导航、塔罗卡牌操作、角色提示与宠物互动的用户路径。</li>
+    <li>使用 HTML/CSS/JavaScript 与 Python 服务端结构开展本地迭代。</li>
+    <li>关注多语言、响应式布局和用户体验；公开素材需先确认版权与隐私。</li>
+  </ul>
+  <div class="case-link">真实项目已定位；尚未宣称公开上线或具备商业化运营数据。</div>
+</article>
+<article class="card">
+  <div class="card-top"><span class="category">06 · 轻量 Web 实验</span><span class="status">演示资料待核对</span></div>
+  <h3>独立网页小游戏 · 前端交互实验</h3>
+  <p>另一项独立的浏览器小游戏尝试，作为前端交互、状态反馈和轻量体验设计的补充案例。</p>
+  <ul class="keypoints">
+    <li>从小游戏用户流程与交互反馈角度梳理可展示的设计说明。</li>
+    <li>待原始工程与实际运行画面核实后补上明确玩法、技术栈和演示截图。</li>
+    <li>不把尚未核实的功能或上线结果写成已完成的商业产品。</li>
+  </ul>
+  <div class="case-link">当前仅保留案例位置；技术细节待原始素材和代码核对。</div>
+</article>
+</div>
+<div class="highlight">
+    <strong>不给源码，也能让招聘方看懂你的实力</strong>
+    <div class="highlights" style="margin-top:23px">
+      <div><div class="metric">01</div><small>场景、目标、限制条件</small></div>
+      <div><div class="metric">02</div><small>架构图、实现路径、本人职责</small></div>
+      <div><div class="metric">03</div><small>录屏、脱敏测试、问题修复证据</small></div>
+    </div>
+    <p style="margin:20px 0 0;font-size:13px">所有可视化素材需经过脱敏及版权审核后再发布。AI 协作开发会如实标注，不以“全部独立手写”夸大经历。</p>
+  </div>
+</div></section>
+
+<section class="section" id="research" style="padding-top:35px"><div class="container">
+  <div class="kicker">ACADEMIC EVIDENCE</div>
+  <h2>已发表研究与建模经历</h2>
+  <p class="section-desc">学术成果与证据分别呈现，论文指向出版方原始页面，证书和比赛队号在正式对外发布前复核。</p>
+  <div class="research" style="margin-top:23px">
+    <article class="card">
+      <span class="label">已发表论文 · 2024</span>
+      <h3 style="margin-top:12px">EPS、杠杆率与 GPU 企业股价关系</h3>
+      <p>以共同作者身份参与 NVIDIA 和 AMD 相关财务数据分析、回归及 EGARCH 股价波动研究。文章已由出版社公开，可查看标题、作者、DOI 与全文信息。</p>
+      <div class="reference"><a href="https://doi.org/10.54254/2754-1169/2024.OX18493" target="_blank" rel="noopener noreferrer">查看出版社论文及 DOI</a></div>
+    </article>
+    <article class="card">
+      <span class="label">硕士研究项目 · UKHLS</span>
+      <h3 style="margin-top:12px">英国成年人的社交媒体使用与心理困扰</h3>
+      <p>基于 UKHLS 第11–15波数据，完成33,027人、91,283条人期观测的清洗匹配、纵向回归和敏感性分析。</p>
+      <p><strong>数据不公开：</strong>仅展示经审查的分析流程图、原创重绘图表及匿名结果摘要。</p>
+    </article>
+  </div>
+  <div class="notice" style="margin-top:18px">
+    <strong>2024 美国大学生数学建模竞赛 Problem C · Honorable Mention</strong> 已记录在求职简历中。COMAP 官方结果表第227页已核对队号 2428445 为 Honorable Mention；仍需用个人参赛证明核对队员身份，证书发布前应脱敏。
+    <a href="https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/2024_MCM_Problem_C_Results.pdf#page=227" target="_blank" rel="noopener noreferrer">COMAP 官方赛果入口</a>
+  </div>
+</div></section>
+
+<section class="section" id="about" style="padding-top:30px"><div class="container">
+  <div class="kicker">PROFILE</div>
+  <h2>统计建模背景与实际研发相结合</h2>
+  <p class="section-desc">北京科技大学信息与计算科学本科（2025）；曼彻斯特大学社会研究方法与统计学硕士研究生经历，简历列预计 2026 年 11 月毕业，正式学位授予尚未确认。</p>
+  <p class="section-desc" style="margin-top:16px">我希望继续在 AI 工具应用、软件开发、数字化解决方案以及数据分析领域，把系统设计、工程落地和证据验证结合起来。</p>
+  <p class="section-desc" style="margin-top:16px"><strong>公开边界：</strong>此处是经过筛选的技术案例，不是全部代码、部署密钥、内部授权或商业素材；尚未把个人项目全部视为产品正式上线经历。</p>
+</div></section>
+</main>
+<footer><div class="container">
+  <span>© 2026 Sheng Xing · AI-assisted personal engineering portfolio · Selected, evidence-based work</span>
+  <span><a href="https://github.com/DerpyTDM520" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="index.html" lang="en">English</a></span>
+</div></footer>
+</body>
+</html>
