@@ -1,144 +1,15 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="description" content="Sheng Xing 个人技术演示：AI Agent、NotePenzo、CareerPilot、Mimi Arcana、游戏原型与数学建模证据。">
-  <title>真实演示与证据 | Sheng Xing</title>
-  <link rel="stylesheet" href="assets/site.css">
-  <link rel="stylesheet" href="assets/demo.css">
-<link rel="stylesheet" href="assets/showcase.css">
-</head>
-<body>
-<header><div class="container">
-  <a class="brand" href="zh.html">SX<span style="color:#346de3">.</span></a>
-  <nav aria-label="主导航">
-    <a href="zh.html">首页</a><a href="#agent">Agent</a><a href="#apps">跨平台应用</a>
-    <a href="#games">游戏实景</a><a href="#research">研究与获奖</a>
-    <a href="demos.html" lang="en">English</a>
-  </nav>
-</div></header>
-<main>
-<section class="demo-intro"><div class="container">
-  <div class="kicker">SELECTED DEMOS · SOURCE-BACKED WORK</div>
-  <h1>真实画面，明确来源。<br>不把原型冒充成品。</h1>
-  <p class="lead">这是一组从本地工程、真实浏览器测试或本人提供的证据中整理的展示材料。每项都说明其测试场景、已完成的功能以及还没验证的部分。</p>
-  <div class="demo-banner">
-    <strong>V4 已公开内容：</strong>HD-2D 游戏实机画面及已核验素材已加入；其余部分角色与游戏资产继续核实展示许可。离线求职表单、项目测试截图和研发架构示意不等于真实招聘投递或商业产品发布。
-  </div>
-</div></section>
-
-<section class="media-section" id="agent"><div class="container">
-  <div class="kicker">AI SYSTEMS</div>
-  <h2>AgentStudio · 工具链与验证架构</h2>
-  <p class="section-desc">从任务输入到模型调用、加密记忆和工具执行，重点展示架构设计和权限边界。下图是根据实际模块绘制的技术示意，而不是伪装成系统截图。</p>
-  <div class="media-grid">
-    <article class="media-card full">
-      <figure>
-        <img src="assets/demos/agentstudio-architecture.svg" width="1200" height="430"
-          alt="AgentStudio 架构示意图：受控输入、Agent 编排、模型路由、加密记忆和工具验收">
-        <div class="body">
-          <h3>Agent 工作流架构（概念示意）</h3>
-          <p>独立模块包括模型路由、MCP/Skills 工具、私有记忆索引与执行证据检查。图中没有用户会话原文、API 密钥或私人目录信息。</p>
-          <div class="source">证据类型：项目代码与技术结构整理，不是伪造 GUI 截图。</div>
-        </div>
-      </figure>
-    </article>
-  </div>
-
-  <h2 style="margin-top:26px">CareerPilot · 真实浏览器、离线模拟申请</h2>
-  <p class="section-desc">以下是真实 Chrome + Playwright 对原创离线测试表单的操作。填写内容为合成资料，附件为合成 TXT，最后停在人工确认页面；从未访问真实雇主申请系统。</p>
-  <div class="media-grid">
-    <article class="media-card">
-      <figure>
-        <img src="assets/demos/careerpilot-offline-form.png" width="1280" height="800"
-          alt="Playwright 自动填写姓名、邮箱、城市、工作经验、工作许可和模拟简历的测试界面" loading="lazy">
-        <div class="body">
-          <h3>多步骤表单自动填写</h3>
-          <p>验证填表、下拉选项、单选按钮、选择本地测试简历附件与下一步准备流程。</p>
-          <div class="source">真实浏览器测试截图 · 仅合成数据</div>
-        </div>
-      </figure>
-    </article>
-    <article class="media-card">
-      <figure>
-        <img src="assets/demos/careerpilot-offline-review.png" width="1280" height="800"
-          alt="自动填写后进入最终审核步骤，但没有点击 Submit 的测试界面" loading="lazy">
-        <div class="body">
-          <h3>提交前人工审核</h3>
-          <p>流程可进入最终审核页，测试明确要求提交次数为零。真实网站的上传、下一步与提交都需要独立确认。</p>
-          <div class="source">真实浏览器测试截图 · 正式投递：0</div>
-        </div>
-      </figure>
-    </article>
-    <article class="media-card full">
-      <figure>
-        <video controls playsinline preload="none" poster="assets/demos/careerpilot-offline-form.png"
-          aria-label="CareerPilot 离线表单实际浏览器操作录屏">
-          <source src="assets/demos/careerpilot-offline-flow.webm" type="video/webm">
-          当前浏览器不支持 WebM 视频播放。
-        </video>
-        <div class="body">
-          <h3>浏览器自动化实录 · Offline Playwright Demo</h3>
-          <p>实际录制了 Chrome 对测试页面的字段填写、附件选择和审核流程。视频只使用合成数据，不涉及求职账号或真实应聘者资料。</p>
-          <div class="media-note">本演示属于本地离线验收，不是对 Workday、Greenhouse 或其他真实招聘网站的正式提交。</div>
-        </div>
-      </figure>
-    </article>
-  </div>
-</div></section>
-
-<section class="media-section" id="games"><div class="container">
-<div class="kicker">GAMEPLAY &amp; 3D ASSETS</div>
-<h2>原创 HD-2D 探索与伙伴养成 · 游戏实机画面</h2><p class="section-desc">来自本地 Godot 原型实际运行与验收截图。展示场景探索、回合战斗和收集图鉴；原型仍处于研发阶段，不代表已发布游戏。</p>
-<div class="media-grid"><article class="media-card"><figure>
-<img src="assets/demos/hd2d-exploration.webp" width="1600" height="900" alt="野外区域与场景探索" loading="lazy">
-<div class="body"><h3>野外区域与场景探索</h3><p>可见道路、环境细节、角色移动区域与任务界面，属于项目原型的实机验收画面。</p><div class="source">游戏实机画面 · HD-2D 原型</div></div>
-</figure></article><article class="media-card"><figure>
-<img src="assets/demos/hd2d-combat.webp" width="1600" height="900" alt="伙伴对战与回合交互" loading="lazy">
-<div class="body"><h3>伙伴对战与回合交互</h3><p>展示角色对战、血量状态和技能菜单，以及战斗回合信息。</p><div class="source">游戏实机画面 · 回合战斗</div></div>
-</figure></article><article class="media-card"><figure>
-<img src="assets/demos/hd2d-dex.webp" width="1600" height="900" alt="伙伴图鉴与收集系统" loading="lazy">
-<div class="body"><h3>伙伴图鉴与收集系统</h3><p>收集状态、图鉴网格与管理操作界面。部分角色与内容仍在制作。</p><div class="source">游戏实机画面 · 图鉴与成长</div></div>
-</figure></article></div>
-
-
-</div></section>
-<section class="media-section" id="apps"><div class="container"><div class="kicker">RIGHTS REVIEW</div><h2>NotePenzo、Mellie、Mimi Arcana 及其他游戏素材</h2><p class="section-desc">这些项目的实际截图与录屏已在本地整理，但包含角色插画、游戏场景或第三方底座界面。公开使用前将逐一核对许可与素材来源，当前不上传这些图像或视频。</p><div class="media-note">所有研发源代码、账号、个人记忆库和未清权资产保持私有。</div></div></section>
-
-<section class="media-section" id="models"><div class="container"><div class="kicker">3D ASSET SHOWCASE</div><h2>3D 角色与场景道具 · 建模成果预览</h2><p class="section-desc">选自个人研发项目的三维资产预览截图，展示人物造型、服饰材质和家具道具。图片为高精度模型预览，并非经过性能优化的游戏实时运行截图。</p><div class="model-grid"><article class="model-card"><img src="assets/demos/model-fantasy-character.webp" loading="lazy" alt="幻想题材人物模型 · 三维预览"><div class="body"><h3>幻想题材人物模型 · 三维预览</h3><p>三维资产展示截图 · 不提供模型文件</p></div></article><article class="model-card"><img src="assets/demos/model-bedroom-bed.webp" loading="lazy" alt="室内家具 · 床具模型预览"><div class="body"><h3>室内家具 · 床具模型预览</h3><p>三维资产展示截图 · 不提供模型文件</p></div></article><article class="model-card"><img src="assets/demos/model-evening-character.webp" loading="lazy" alt="礼服人物 · 三维角色模型预览"><div class="body"><h3>礼服人物 · 三维角色模型预览</h3><p>三维资产展示截图 · 不提供模型文件</p></div></article></div></div></section>
-<section class="media-section" id="research"><div class="container"><div class="media-cta"><a class="button primary" href="academic-zh.html">查看 18 张原创科研图表、公式及分析代码切片</a></div>
-  <div class="kicker">ACADEMIC EVIDENCE</div>
-  <h2>真实证书与官方论文记录</h2>
-  <div class="media-grid">
-    <article class="media-card">
-      <figure>
-        <img class="portrait" src="assets/demos/mcm2024-authentic-redacted.webp" width="921" height="706"
-          alt="2024 Mathematical Contest in Modeling Honorable Mention 获奖证书真实截图，队友与导师姓名已遮挡，Sheng Xing 可见" loading="lazy">
-        <div class="body">
-          <h3>2024 MCM · Honorable Mention</h3>
-          <p>根据本人提供的真实证书截图裁剪并使用不透明遮挡保护队友与导师姓名；没有用 AI 重新生成证书。官方赛果显示 Control #2428445 为 Problem C Honorable Mention。</p>
-          <div class="source"><a href="https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/2024_MCM_Problem_C_Results.pdf#page=227" target="_blank" rel="noopener noreferrer">COMAP 官方赛果第 227 页</a></div>
-        </div>
-      </figure>
-    </article>
-    <article class="media-card">
-      <div class="body" style="padding-top:24px">
-        <span class="category">2024 · PUBLISHED RESEARCH</span>
-        <h3 style="margin-top:12px">Impact of Net Earnings per Share and Leverage on Stock Prices</h3>
-        <p>NVIDIA/AMD 数据的财务指标、回归与 EGARCH 股价波动研究。以公开出版社记录和 DOI 作为主要证明；不擅自公开出版方的全文 PDF 或未清权图表。</p>
-        <div class="source"><a href="https://doi.org/10.54254/2754-1169/2024.OX18493" target="_blank" rel="noopener noreferrer">访问出版社 DOI</a></div>
-
-      </div>
-    </article>
-  </div>
-  <div class="media-cta"><a class="button primary" href="zh.html">返回中文首页</a><a class="button" href="demos.html" lang="en">View English version</a></div>
-</div></section>
-</main>
-<footer><div class="container">
-  <span>© 2026 Sheng Xing · 本地 V3 预览 · 真实来源分级标注 · 尚未替换公开站点</span>
-  <span><a href="zh.html">首页</a> · <a href="https://github.com/DerpyTDM520" target="_blank" rel="noopener noreferrer">GitHub</a></span>
-</div></footer>
-</body>
-</html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
+<meta name="referrer" content="strict-origin-when-cross-origin"><meta name="description" content="从一段探索、一张笔记，到一条自动化流程。这里收录可以直接观看的产品片段、界面细节与三维资产展示。"><title>项目演示｜邢晟作品集</title>
+<link rel="canonical" href="https://derpytdm520.github.io/demos-zh.html">
+<link rel="alternate" hreflang="zh-CN" href="https://derpytdm520.github.io/demos-zh.html"><link rel="alternate" hreflang="en" href="https://derpytdm520.github.io/demos.html">
+<link rel="stylesheet" href="assets/portfolio-v5.css"><script defer src="assets/portfolio-v5.js"></script>
+</head><body class="page-demos">
+<a class="skip-link" href="#main">跳至正文</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="zh.html" aria-label="Sheng Xing — 首页"><span class="brand-mark">SX<span>·</span></span><span class="brand-name">邢晟</span></a>
+<nav aria-label="主导航"><a href="zh.html">首页</a><a href="demos-zh.html" aria-current="page">项目演示</a><a href="academic-zh.html">学术研究</a><a class="language" data-language href="demos.html" lang="en">English</a></nav></div></header>
+<main id="main"><section class="page-hero container"><h1>把项目打开，<br>看它如何运行。</h1><div><p class="lead">从一段探索、一张笔记，到一条自动化流程。这里收录可以直接观看的产品片段、界面细节与三维资产展示。</p><p class="small-copy">素材选自研发版本；运行片段、模拟器画面与视觉方案分别标注。</p></div></section><div class="container"><nav class="section-nav" aria-label="演示分类"><a href="#games">游戏实录</a><a href="#apps">笔记应用</a><a href="#web">网页交互</a><a href="#agent">AI 工作流</a><a href="#game-systems">游戏系统</a><a href="#models">三维资产</a></nav></div><section class="content-section" id="games"><div class="container"><p class="section-number">01 · HD-2D</p><div class="section-heading"><h2>一个可以走进去的世界。</h2><p>森林路径、角色移动、遭遇切换与回合反馈，共同构成这一段 HD-2D 运行演示。画面保留游戏中的状态信息，让场景表现和交互过程同时可见。</p></div><div class="media-grid feature-grid"><figure class="media-figure video-figure wide"><div class="video-shell"><video controls playsinline muted preload="metadata" poster="assets/demos/hd2d-runtime-poster.webp" aria-label="森林探索与战斗演示"><source src="assets/demos/hd2d-runtime.mp4" type="video/mp4">当前浏览器无法播放此视频。</video></div><figcaption><h3>森林探索与战斗演示</h3><p>本地游戏构建录屏 · 连续运行片段</p></figcaption></figure><figure class="media-figure "><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/hd2d-combat.webp" data-zoom-alt="场景层次与战斗界面" aria-label="放大：场景层次与战斗界面"><img src="assets/demos/hd2d-combat.webp" alt="场景层次与战斗界面" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>场景层次与战斗界面</h3><p>同一运行版本中的植被、角色与回合状态。</p></figcaption></figure></div></div></section><section class="content-section" id="apps"><div class="container"><p class="section-number">02 · NotePenzo</p><div class="section-heading"><h2>把编辑体验放在中心。</h2><p>NotePenzo 以平板上的笔记编辑为起点，逐步加入历史恢复、跨端数据与角色助手。这里展示原生模拟器中的编辑界面、工具布局与外观设置。</p></div><div class="media-grid portrait-pair"><figure class="media-figure video-figure portrait"><div class="video-shell"><video controls playsinline muted preload="metadata" poster="assets/demos/notepenzo-native-poster.webp" aria-label="原生编辑与外观设置"><source src="assets/demos/notepenzo-native.mp4" type="video/mp4">当前浏览器无法播放此视频。</video></div><figcaption><h3>原生编辑与外观设置</h3><p>iPadOS 模拟器录屏节选 · NotePenzo 研发版本</p></figcaption></figure><figure class="media-figure portrait"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/notepenzo-ipad-editor.webp" data-zoom-alt="纸面、工具栏与角色面板" aria-label="放大：纸面、工具栏与角色面板"><img src="assets/demos/notepenzo-ipad-editor.webp" alt="纸面、工具栏与角色面板" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>纸面、工具栏与角色面板</h3><p>原生编辑器截图，展示当前界面布局。</p></figcaption></figure></div><p class="section-footnote">Mellie（小绯）的研发侧重对话记忆、交互状态与低打扰反馈；当前图像呈现的是该版本的编辑器与角色面板。</p></div></section><section class="content-section" id="web"><div class="container"><p class="section-number">03 · Mimi Arcana</p><div class="section-heading"><h2>让网页交互有自己的性格。</h2><p>Mimi Arcana 将卡牌区域、角色提示与双语导航组织成一条完整的浏览路径。录屏展示页面之间的切换和前端模块，不涉及在线模型服务。</p></div><div class="media-grid"><figure class="media-figure video-figure "><div class="video-shell"><video controls playsinline muted preload="metadata" poster="assets/demos/mimi-arcana-interaction-poster.webp" aria-label="从首页到卡牌区域"><source src="assets/demos/mimi-arcana-interaction.mp4" type="video/mp4">当前浏览器无法播放此视频。</video></div><figcaption><h3>从首页到卡牌区域</h3><p>本地浏览器操作录屏</p></figcaption></figure><figure class="media-figure "><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/mimi-arcana-tarot-reader.webp" data-zoom-alt="卡牌与角色互动界面" aria-label="放大：卡牌与角色互动界面"><img src="assets/demos/mimi-arcana-tarot-reader.webp" alt="卡牌与角色互动界面" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>卡牌与角色互动界面</h3><p>浏览器截图 · 前端交互原型</p></figcaption></figure></div></div></section><section class="content-section" id="agent"><div class="container"><p class="section-number">04 · AgentStudio / CareerPilot</p><div class="section-heading"><h2>让工具协作，也让过程可追溯。</h2><p>AgentStudio 关注模型路由、工具调用与项目记忆如何协作；CareerPilot 把这些思路落实到申请准备场景，重点验证表单操作和人工审核流程。</p></div><div class="media-grid"><figure class="media-figure diagram"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/agentstudio-architecture.svg" data-zoom-alt="AgentStudio · 工作流架构" aria-label="放大：AgentStudio · 工作流架构"><img src="assets/demos/agentstudio-architecture.svg" alt="AgentStudio · 工作流架构" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>AgentStudio · 工作流架构</h3><p>根据项目模块整理的架构示意。</p></figcaption></figure><div id="careerpilot"><figure class="media-figure video-figure "><div class="video-shell"><video controls playsinline muted preload="metadata" poster="assets/demos/careerpilot-browser-poster.webp" aria-label="CareerPilot · 填写、附件与审核"><source src="assets/demos/careerpilot-browser.mp4" type="video/mp4">当前浏览器无法播放此视频。</video></div><figcaption><h3>CareerPilot · 填写、附件与审核</h3><p>离线测试表单与示例资料 · 流程停在提交前审核</p></figcaption></figure></div></div></div></section><section class="content-section" id="game-systems"><div class="container"><p class="section-number">05 · Godot / Unreal</p><div class="section-heading"><h2>不同类型，同样重视系统衔接。</h2><p>《烂赌鬼乔伊》围绕生活、经济与交互选择展开；ZombieHorde3D 则关注射击、阶段目标与成长反馈。以下分别展示运行界面与视觉设计工作。</p></div><div class="media-grid"><figure class="media-figure "><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/zombiehorde-gameplay.webp" data-zoom-alt="ZombieHorde3D · 战斗与阶段目标" aria-label="放大：ZombieHorde3D · 战斗与阶段目标"><img src="assets/demos/zombiehorde-gameplay.webp" alt="ZombieHorde3D · 战斗与阶段目标" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>ZombieHorde3D · 战斗与阶段目标</h3><p>Unreal Engine 本地打包版本截图。</p></figcaption></figure><figure class="media-figure "><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/joey-market-terminal.webp" data-zoom-alt="《烂赌鬼乔伊》· 游戏内市场终端" aria-label="放大：《烂赌鬼乔伊》· 游戏内市场终端"><img src="assets/demos/joey-market-terminal.webp" alt="《烂赌鬼乔伊》· 游戏内市场终端" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>《烂赌鬼乔伊》· 游戏内市场终端</h3><p>Godot 界面运行截图 · 使用测试行情，非真实金融交易。</p></figcaption></figure><figure class="media-figure full"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/joey-roulette-ui.webp" data-zoom-alt="轮盘界面 · 视觉方向" aria-label="放大：轮盘界面 · 视觉方向"><img src="assets/demos/joey-roulette-ui.webp" alt="轮盘界面 · 视觉方向" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>轮盘界面 · 视觉方向</h3><p>黑金主题、下注区域与信息层级的视觉设计方案。</p></figcaption></figure></div></div></section><section class="content-section" id="models"><div class="container"><p class="section-number">06 · 三维资产</p><div class="section-heading"><h2>角色与道具，从造型到材质。</h2><p>三组模型预览截图，分别呈现幻想角色、室内家具与礼服人物的造型和材质细节。这里展示三维资产外观，不提供模型或工程文件。</p></div><div class="model-grid"><figure class="media-figure model"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/model-fantasy-character.webp" data-zoom-alt="幻想题材角色" aria-label="放大：幻想题材角色"><img src="assets/demos/model-fantasy-character.webp" alt="幻想题材角色" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>幻想题材角色</h3><p>三维模型预览</p></figcaption></figure><figure class="media-figure model"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/model-bedroom-bed.webp" data-zoom-alt="室内床具" aria-label="放大：室内床具"><img src="assets/demos/model-bedroom-bed.webp" alt="室内床具" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>室内床具</h3><p>三维模型预览</p></figcaption></figure><figure class="media-figure model"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/model-evening-character.webp" data-zoom-alt="礼服人物" aria-label="放大：礼服人物"><img src="assets/demos/model-evening-character.webp" alt="礼服人物" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">查看大图 ↗</span></button><figcaption><h3>礼服人物</h3><p>三维模型预览</p></figcaption></figure></div></div></section><section class="callout" id="research"><div class="container callout-inner"><div><h2>也看看，这些作品背后的研究训练。</h2><p>从种群模型的数值模拟，到 UKHLS 纵向数据分析，阅读问题、方法与图表之间的联系。</p></div><a class="button light" href="academic-zh.html">进入学术研究 ↗</a></div></section>
+<div class="container credits"><details><summary>画面说明与素材鸣谢</summary><p>运行素材按原始画面节选与压缩，未用生成画面替换程序输出。HD-2D 场景包含 Quaternius 资源，部分特效来自 Patch / Hugo Duprez。项目开发结合自研模块、授权素材与 AI 辅助工具。</p><p><a href="https://quaternius.com/packs/stylizednaturemegakit.html" target="_blank" rel="noopener noreferrer">Quaternius</a> · <a href="https://github.com/patch-gg/pixelfx" target="_blank" rel="noopener noreferrer">Patch / Hugo Duprez</a></p></details></div></main><footer class="site-footer"><div class="container footer-inner"><span>© 2026 Sheng Xing · 研发、交互与研究</span><a href="https://github.com/DerpyTDM520" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></footer>
+<dialog class="lightbox" id="image-lightbox" aria-label="图片预览"><div class="lightbox-controls"><button type="button" data-size-toggle aria-pressed="false">原始尺寸</button><button type="button" data-close-lightbox aria-label="关闭图片预览">关闭 ×</button></div><div class="lightbox-scroll"><img alt=""></div><p class="lightbox-caption"></p></dialog>
+</body></html>

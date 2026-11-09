@@ -1,118 +1,15 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="description" content="Source-backed demos of agent tooling, NotePenzo, CareerPilot, interactive web prototyping, Unreal playtests and MCM recognition.">
-  <title>Product Demos and Evidence | Sheng Xing</title>
-  <link rel="stylesheet" href="assets/site.css">
-  <link rel="stylesheet" href="assets/demo.css">
-<link rel="stylesheet" href="assets/showcase.css">
-</head>
-<body>
-<header><div class="container">
-  <a class="brand" href="index.html">SX<span style="color:#346de3">.</span></a>
-  <nav aria-label="Primary navigation">
-    <a href="index.html">Home</a><a href="#agent">AI Agents</a><a href="#apps">Product</a><a href="#games">Game Captures</a><a href="#research">Research</a>
-    <a href="demos-zh.html" lang="zh-CN">中文</a>
-  </nav>
-</div></header>
-<main>
-<section class="demo-intro"><div class="container">
-  <div class="kicker">SELECTED DEMOS · SOURCE-BACKED WORK</div>
-  <h1>Real captures, clear provenance.<br>No prototypes passed off as launches.</h1>
-  <p class="lead">These selected materials were captured from actual local development projects, real Chrome test runs, or the applicant's supplied evidence. Each item states what was demonstrated and what is not yet validated.</p>
-  <div class="demo-banner"><strong>Public V4 selection:</strong> HD-2D screenshots and other reviewed materials are published. Additional game/character assets remain in private review. Offline test recordings do not demonstrate successful submissions to real employer websites.</div>
-</div></section>
-
-<section class="media-section" id="agent"><div class="container">
-  <div class="kicker">AGENT ENGINEERING</div>
-  <h2>AgentStudio · Tool and verification architecture</h2>
-  <p class="section-desc">A conceptual technical overview derived from the local agent stack, not a simulated software screenshot or a reproduction of private task history.</p>
-  <div class="media-grid">
-    <article class="media-card full"><figure>
-      <img src="assets/demos/agentstudio-architecture.svg" width="1200" height="430"
-           alt="Conceptual agent workflow diagram: user scope, orchestration, model routing, private memory and reviewed tools">
-      <div class="body"><h3>Model routing, scoped tools and memory</h3>
-        <p>Shows the boundaries between an agent orchestration layer, MCP/Skills, encrypted local memory and verified tool execution. No personal conversations, local private paths or API keys are exposed.</p>
-        <div class="source">Evidence type: architecture illustration based on implemented local modules.</div>
-      </div></figure></article>
-  </div>
-
-  <h2 style="margin-top:30px">CareerPilot · Real Chrome interaction with a synthetic test form</h2>
-  <p class="section-desc">The browser interacted with an original offline fixture and synthetic candidate data. No real employer application, real resume, or private applicant information was used.</p>
-  <div class="media-grid">
-    <article class="media-card"><figure>
-      <img src="assets/demos/careerpilot-offline-form.png" width="1280" height="800"
-           alt="Playwright completed local offline test-form fields and selected a synthetic resume" loading="lazy">
-      <div class="body"><h3>Multi-step form preparation</h3><p>Demonstrates field filling, select/radio controls and a synthetic attachment using a real Chromium automation run.</p>
-        <div class="source">Real browser screenshot · synthetic data only.</div></div>
-    </figure></article>
-    <article class="media-card"><figure>
-      <img src="assets/demos/careerpilot-offline-review.png" width="1280" height="800"
-           alt="Offline ATS fixture's final review stage; the real submit action was never taken" loading="lazy">
-      <div class="body"><h3>Human review before submission</h3><p>The automation stops at the local review stage. No final Submit action was executed.</p>
-        <div class="source">Real browser screenshot · submitted applications: 0.</div></div>
-    </figure></article>
-    <article class="media-card full"><figure>
-      <video controls playsinline preload="none" poster="assets/demos/careerpilot-offline-form.png"
-             aria-label="CareerPilot offline automated browser flow">
-        <source src="assets/demos/careerpilot-offline-flow.webm" type="video/webm">
-        Your browser cannot play WebM.
-      </video>
-      <div class="body"><h3>Recorded browser workflow</h3><p>This is a recording of genuine Chrome/Playwright interaction with an invented local test form. It must not be interpreted as a successful application on Workday, Greenhouse or another recruiting system.</p>
-        <div class="media-note">Offline synthetic test only; no employer or applicant data was sent.</div></div>
-    </figure></article>
-  </div>
-</div></section>
-
-<section class="media-section" id="games"><div class="container">
-<div class="kicker">GAMEPLAY &amp; 3D ASSETS</div>
-<h2>Original HD-2D exploration and companion systems · Actual gameplay</h2><p class="section-desc">Captured from the running Godot development prototype: world exploration, turn-based encounters and the collection index. This is a development-stage game, not a commercial release.</p>
-<div class="media-grid"><article class="media-card"><figure>
-<img src="assets/demos/hd2d-exploration.webp" width="1600" height="900" alt="Field exploration and environment" loading="lazy">
-<div class="body"><h3>Field exploration and environment</h3><p>Walkable paths, layered vegetation, character navigation and in-game location panels in the original prototype.</p><div class="source">Actual game screenshot · HD-2D prototype</div></div>
-</figure></article><article class="media-card"><figure>
-<img src="assets/demos/hd2d-combat.webp" width="1600" height="900" alt="Companion combat and interface" loading="lazy">
-<div class="body"><h3>Companion combat and interface</h3><p>Turn-based combat UI with live health, skill options and encounter states.</p><div class="source">Actual game screenshot · battle system</div></div>
-</figure></article><article class="media-card"><figure>
-<img src="assets/demos/hd2d-dex.webp" width="1600" height="900" alt="Companion index and collection" loading="lazy">
-<div class="body"><h3>Companion index and collection</h3><p>An in-game collection index with discovered states and party navigation.</p><div class="source">Actual game screenshot · progression and collection</div></div>
-</figure></article></div>
-
-
-</div></section>
-<section class="media-section" id="apps"><div class="container"><div class="kicker">RIGHTS REVIEW</div><h2>NotePenzo, Mellie, Mimi Arcana and additional game visuals</h2><p class="section-desc">Additional real screenshots and recordings are available in the private review collection. Images with unresolved third-party interface, character or game-asset rights are not included on this public page.</p><div class="media-note">Private source trees, accounts, personal memory, and uncleared media are not in this release candidate.</div></div></section>
-
-<section class="media-section" id="models"><div class="container"><div class="kicker">3D ASSET SHOWCASE</div><h2>3D Character and Environment Assets · Model Previews</h2><p class="section-desc">Screenshots of 3D assets prepared for personal projects, covering character silhouettes, costume materials, and furniture props. These are high-detail model previews, not optimized in-game runtime captures.</p><div class="model-grid"><article class="model-card"><img src="assets/demos/model-fantasy-character.webp" loading="lazy" alt="Fantasy character · 3D model preview"><div class="body"><h3>Fantasy character · 3D model preview</h3><p>3D asset screenshot · no model files distributed</p></div></article><article class="model-card"><img src="assets/demos/model-bedroom-bed.webp" loading="lazy" alt="Bedroom prop · 3D model preview"><div class="body"><h3>Bedroom prop · 3D model preview</h3><p>3D asset screenshot · no model files distributed</p></div></article><article class="model-card"><img src="assets/demos/model-evening-character.webp" loading="lazy" alt="Formalwear character · 3D model preview"><div class="body"><h3>Formalwear character · 3D model preview</h3><p>3D asset screenshot · no model files distributed</p></div></article></div></div></section>
-<section class="media-section" id="research"><div class="container"><div class="media-cta"><a class="button primary" href="academic.html">Explore 18 research charts, equations, and code excerpts</a></div>
-  <div class="kicker">ACADEMIC EVIDENCE</div>
-  <h2>A genuine award certificate and a publisher DOI</h2>
-  <div class="media-grid">
-    <article class="media-card"><figure>
-      <img class="portrait" src="assets/demos/mcm2024-authentic-redacted.webp" width="921" height="706"
-           alt="Authentic cropped 2024 Mathematical Contest in Modeling Honorable Mention certificate; other team and adviser names obscured" loading="lazy">
-      <div class="body"><h3>2024 MCM · Honorable Mention</h3>
-        <p>Cropped from the applicant-supplied original screenshot, with opaque privacy redaction for other people. No AI-generated certificate has been substituted. COMAP lists Control #2428445 for Problem C Honorable Mention.</p>
-        <div class="source"><a href="https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/2024_MCM_Problem_C_Results.pdf#page=227" target="_blank" rel="noopener noreferrer">Official COMAP results, page 227</a></div>
-      </div>
-    </figure></article>
-    <article class="media-card">
-      <div class="body" style="padding-top:26px"><span class="category">2024 · PUBLISHED ARTICLE</span>
-        <h3 style="margin-top:14px">Impact of Net Earnings per Share and Leverage on Stock Prices</h3>
-        <p>A co-authored published study on EPS, leverage and NVIDIA/AMD share prices, including regression and EGARCH-related analysis. The publisher's DOI is the primary evidence; full copyrighted text is not re-uploaded.</p>
-        <div class="source"><a href="https://doi.org/10.54254/2754-1169/2024.OX18493" target="_blank" rel="noopener noreferrer">Publisher DOI and article record</a></div>
-
-      </div>
-    </article>
-  </div>
-  <div class="media-cta"><a class="button primary" href="index.html">Back to homepage</a><a class="button" href="demos-zh.html" lang="zh-CN">中文</a></div>
-</div></section>
-</main>
-<footer><div class="container">
-  <span>© 2026 Sheng Xing · Public V4 · source-backed portfolio</span>
-  <span><a href="index.html">Home</a> · <a href="https://github.com/DerpyTDM520" target="_blank" rel="noopener noreferrer">GitHub</a></span>
-</div></footer>
-</body>
-</html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
+<meta name="referrer" content="strict-origin-when-cross-origin"><meta name="description" content="From an exploration sequence and a note-taking interface to an automated workflow. Explore selected product clips, interface details and 3D asset previews."><title>Project Demos | Sheng Xing</title>
+<link rel="canonical" href="https://derpytdm520.github.io/demos.html">
+<link rel="alternate" hreflang="zh-CN" href="https://derpytdm520.github.io/demos-zh.html"><link rel="alternate" hreflang="en" href="https://derpytdm520.github.io/demos.html">
+<link rel="stylesheet" href="assets/portfolio-v5.css"><script defer src="assets/portfolio-v5.js"></script>
+</head><body class="page-demos">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Sheng Xing — Home"><span class="brand-mark">SX<span>·</span></span><span class="brand-name">Sheng Xing</span></a>
+<nav aria-label="Primary navigation"><a href="index.html">Home</a><a href="demos.html" aria-current="page">Demos</a><a href="academic.html">Research</a><a class="language" data-language href="demos-zh.html" lang="zh-CN">中文</a></nav></div></header>
+<main id="main"><section class="page-hero container"><h1>See the work.<br>Follow the interaction.</h1><div><p class="lead">From an exploration sequence and a note-taking interface to an automated workflow. Explore selected product clips, interface details and 3D asset previews.</p><p class="small-copy">Selected from development versions, with recorded builds, simulator captures and visual concepts labeled separately.</p></div></section><div class="container"><nav class="section-nav" aria-label="Demo sections"><a href="#games">Gameplay</a><a href="#apps">Notes</a><a href="#web">Web</a><a href="#agent">AI workflows</a><a href="#game-systems">Game systems</a><a href="#models">3D assets</a></nav></div><section class="content-section" id="games"><div class="container"><p class="section-number">01 · HD-2D</p><div class="section-heading"><h2>A world to move through.</h2><p>Forest paths, character movement, encounter transitions and turn-based feedback come together in this HD-2D demonstration. In-game state remains visible alongside the environment and interaction.</p></div><div class="media-grid feature-grid"><figure class="media-figure video-figure wide"><div class="video-shell"><video controls playsinline muted preload="metadata" poster="assets/demos/hd2d-runtime-poster.webp" aria-label="Forest exploration and combat"><source src="assets/demos/hd2d-runtime.mp4" type="video/mp4">This browser cannot play the video.</video></div><figcaption><h3>Forest exploration and combat</h3><p>Local game-build recording · Continuous sequence</p></figcaption></figure><figure class="media-figure "><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/hd2d-combat.webp" data-zoom-alt="Environment layers and combat UI" aria-label="Enlarge: Environment layers and combat UI"><img src="assets/demos/hd2d-combat.webp" alt="Environment layers and combat UI" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>Environment layers and combat UI</h3><p>Vegetation, characters and turn state from the same build.</p></figcaption></figure></div></div></section><section class="content-section" id="apps"><div class="container"><p class="section-number">02 · NotePenzo</p><div class="section-heading"><h2>Keeping the editing experience at the center.</h2><p>NotePenzo starts with tablet note-taking and extends into version recovery, shared data and a character assistant. These captures show the native simulator&#x27;s editor, tools and appearance settings.</p></div><div class="media-grid portrait-pair"><figure class="media-figure video-figure portrait"><div class="video-shell"><video controls playsinline muted preload="metadata" poster="assets/demos/notepenzo-native-poster.webp" aria-label="Native editing and appearance settings"><source src="assets/demos/notepenzo-native.mp4" type="video/mp4">This browser cannot play the video.</video></div><figcaption><h3>Native editing and appearance settings</h3><p>iPadOS simulator recording excerpt · NotePenzo development build</p></figcaption></figure><figure class="media-figure portrait"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/notepenzo-ipad-editor.webp" data-zoom-alt="Canvas, tools and character panel" aria-label="Enlarge: Canvas, tools and character panel"><img src="assets/demos/notepenzo-ipad-editor.webp" alt="Canvas, tools and character panel" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>Canvas, tools and character panel</h3><p>Native editor capture showing the interface layout.</p></figcaption></figure></div><p class="section-footnote">Work on Mellie focuses on conversational memory, interaction states and low-interruption feedback. These images show the editor and character panel in the captured version.</p></div></section><section class="content-section" id="web"><div class="container"><p class="section-number">03 · Mimi Arcana</p><div class="section-heading"><h2>Web interactions with a personality of their own.</h2><p>Mimi Arcana organizes cards, character prompts and bilingual navigation into a connected browsing flow. The clip shows page transitions and frontend modules, without an online model service.</p></div><div class="media-grid"><figure class="media-figure video-figure "><div class="video-shell"><video controls playsinline muted preload="metadata" poster="assets/demos/mimi-arcana-interaction-poster.webp" aria-label="From the homepage to the card area"><source src="assets/demos/mimi-arcana-interaction.mp4" type="video/mp4">This browser cannot play the video.</video></div><figcaption><h3>From the homepage to the card area</h3><p>Local browser interaction recording</p></figcaption></figure><figure class="media-figure "><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/mimi-arcana-tarot-reader.webp" data-zoom-alt="Cards and character interaction" aria-label="Enlarge: Cards and character interaction"><img src="assets/demos/mimi-arcana-tarot-reader.webp" alt="Cards and character interaction" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>Cards and character interaction</h3><p>Browser capture · Frontend interaction prototype</p></figcaption></figure></div></div></section><section class="content-section" id="agent"><div class="container"><p class="section-number">04 · AgentStudio / CareerPilot</p><div class="section-heading"><h2>Coordinated tools. Traceable work.</h2><p>AgentStudio explores how model routing, tools and project memory work together. CareerPilot applies that thinking to application preparation, with browser-form interaction and human review as the demonstration focus.</p></div><div class="media-grid"><figure class="media-figure diagram"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/agentstudio-architecture.svg" data-zoom-alt="AgentStudio · Workflow architecture" aria-label="Enlarge: AgentStudio · Workflow architecture"><img src="assets/demos/agentstudio-architecture.svg" alt="AgentStudio · Workflow architecture" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>AgentStudio · Workflow architecture</h3><p>Architecture overview based on the project&#x27;s modules.</p></figcaption></figure><div id="careerpilot"><figure class="media-figure video-figure "><div class="video-shell"><video controls playsinline muted preload="metadata" poster="assets/demos/careerpilot-browser-poster.webp" aria-label="CareerPilot · Fields, attachments and review"><source src="assets/demos/careerpilot-browser.mp4" type="video/mp4">This browser cannot play the video.</video></div><figcaption><h3>CareerPilot · Fields, attachments and review</h3><p>Offline test form and example data · Stops at pre-submission review</p></figcaption></figure></div></div></div></section><section class="content-section" id="game-systems"><div class="container"><p class="section-number">05 · Godot / Unreal</p><div class="section-heading"><h2>Different genres. The same care for connected systems.</h2><p>Joey&#x27;s Last Bet explores everyday life, economy and interactive choices. ZombieHorde3D focuses on shooting, stage objectives and progression feedback. The selection below separates running interfaces from visual design work.</p></div><div class="media-grid"><figure class="media-figure "><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/zombiehorde-gameplay.webp" data-zoom-alt="ZombieHorde3D · Combat and stage objectives" aria-label="Enlarge: ZombieHorde3D · Combat and stage objectives"><img src="assets/demos/zombiehorde-gameplay.webp" alt="ZombieHorde3D · Combat and stage objectives" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>ZombieHorde3D · Combat and stage objectives</h3><p>Capture from a locally packaged Unreal Engine build.</p></figcaption></figure><figure class="media-figure "><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/joey-market-terminal.webp" data-zoom-alt="Joey&#x27;s Last Bet · In-game market terminal" aria-label="Enlarge: Joey&#x27;s Last Bet · In-game market terminal"><img src="assets/demos/joey-market-terminal.webp" alt="Joey&#x27;s Last Bet · In-game market terminal" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>Joey&#x27;s Last Bet · In-game market terminal</h3><p>Running Godot interface · Test market data, not financial trading.</p></figcaption></figure><figure class="media-figure full"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/joey-roulette-ui.webp" data-zoom-alt="Roulette interface · Visual direction" aria-label="Enlarge: Roulette interface · Visual direction"><img src="assets/demos/joey-roulette-ui.webp" alt="Roulette interface · Visual direction" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>Roulette interface · Visual direction</h3><p>A visual concept for casino theming, betting controls and information hierarchy.</p></figcaption></figure></div></div></section><section class="content-section" id="models"><div class="container"><p class="section-number">06 · 3D assets</p><div class="section-heading"><h2>Characters and props, from form to material.</h2><p>Three model-preview screenshots exploring a fantasy character, bedroom furniture and a formalwear character. The gallery presents appearance and materials without distributing model or project files.</p></div><div class="model-grid"><figure class="media-figure model"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/model-fantasy-character.webp" data-zoom-alt="Fantasy character" aria-label="Enlarge: Fantasy character"><img src="assets/demos/model-fantasy-character.webp" alt="Fantasy character" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>Fantasy character</h3><p>3D model preview</p></figcaption></figure><figure class="media-figure model"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/model-bedroom-bed.webp" data-zoom-alt="Bedroom furniture" aria-label="Enlarge: Bedroom furniture"><img src="assets/demos/model-bedroom-bed.webp" alt="Bedroom furniture" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>Bedroom furniture</h3><p>3D model preview</p></figcaption></figure><figure class="media-figure model"><button type="button" class="zoom-trigger" data-zoom-image="assets/demos/model-evening-character.webp" data-zoom-alt="Formalwear character" aria-label="Enlarge: Formalwear character"><img src="assets/demos/model-evening-character.webp" alt="Formalwear character" loading="lazy" decoding="async"><span class="zoom-label" aria-hidden="true">Enlarge ↗</span></button><figcaption><h3>Formalwear character</h3><p>3D model preview</p></figcaption></figure></div></div></section><section class="callout" id="research"><div class="container callout-inner"><div><h2>Explore the research behind the practice.</h2><p>From population-model simulations to UKHLS longitudinal analysis, follow the link between questions, methods and figures.</p></div><a class="button light" href="academic.html">Explore the research ↗</a></div></section>
+<div class="container credits"><details><summary>Capture notes &amp; credits</summary><p>Recordings are excerpted and compressed from the original captures; generated images do not replace runtime output. HD-2D environments include Quaternius assets, with selected effects by Patch / Hugo Duprez. Development combines custom modules, licensed assets and AI-assisted tools.</p><p><a href="https://quaternius.com/packs/stylizednaturemegakit.html" target="_blank" rel="noopener noreferrer">Quaternius</a> · <a href="https://github.com/patch-gg/pixelfx" target="_blank" rel="noopener noreferrer">Patch / Hugo Duprez</a></p></details></div></main><footer class="site-footer"><div class="container footer-inner"><span>© 2026 Sheng Xing · Engineering, interaction & research</span><a href="https://github.com/DerpyTDM520" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></footer>
+<dialog class="lightbox" id="image-lightbox" aria-label="Image preview"><div class="lightbox-controls"><button type="button" data-size-toggle aria-pressed="false">Original size</button><button type="button" data-close-lightbox aria-label="Close image preview">Close ×</button></div><div class="lightbox-scroll"><img alt=""></div><p class="lightbox-caption"></p></dialog>
+</body></html>
