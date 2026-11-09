@@ -1,19 +1,9 @@
-# Sheng Xing – Bilingual Engineering Portfolio
+# Sheng Xing — Engineering Portfolio
 
-Public-facing static HTML/CSS website showcasing selected AI agent, software, web-interaction, game-system and research work.
+Bilingual static portfolio presenting anonymized engineering cases and academic work.
 
-- **English:** index.html
-- **简体中文:** zh.html
-- **Styles:** assets/site.css
-- **Build:** none; pure static files
-- **Scripts / analytics:** none
-- **Original private projects / data:** not included
+Public case labels describe capabilities, not unreleased product brands. Selected media are cropped to exclude names, branding and design details. Original project files, private source code and datasets are not distributed.
 
-Academic references link to publicly available publisher and contest records. Source code of proprietary, third-party-licensed or in-progress systems is intentionally excluded.
+Pages: index.html / zh.html, demos.html / demos-zh.html, academic.html / academic-zh.html. Shared styles and interaction code are in assets/portfolio-v6.css and assets/portfolio-v6.js. No analytics or third-party runtime requests.
 
-## Publication
-This repository is intended for GitHub Pages from the main branch, root folder, after personal review and approval. Publishing this website does not publish the original project repositories or grant rights to third-party artwork or code.
-
-Do not add raw resumes, personal contact records, credentials, database backups, original game assets, or unlicensed media.
-
-© 2026 Sheng Xing · Portfolio copy reviewed for publicly supportable claims.
+The local AI workbench covers inference, encrypted retrieval, MCP tools, image-to-video generation, media conversion, asset checks, approved regression tasks and resource safeguards. Verification scopes are explained on the demos page; module success does not imply universal end-to-end automation.
