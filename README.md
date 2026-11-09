@@ -2,7 +2,7 @@
 
 Bilingual static portfolio presenting anonymized engineering cases and academic work.
 
-Public case labels describe capabilities, not unreleased product brands. Selected media are cropped to exclude names, branding and design details. Original project files, private source code and datasets are not distributed.
+Public case labels describe capabilities, not unreleased product brands. Visual media uses full original frame compositions. Public titles and captions remain generic; product names may be visible inside the original pictures. Original project files, private source code and datasets are not distributed.
 
 Pages: index.html / zh.html, demos.html / demos-zh.html, academic.html / academic-zh.html. Shared styles and interaction code are in assets/portfolio-v6.css and assets/portfolio-v6.js. No analytics or third-party runtime requests.
 

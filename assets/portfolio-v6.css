@@ -24,3 +24,38 @@
 
 /* Capability index within the existing visual system. */
 .capability-section{padding:64px 0;background:#f4f7fb;border-bottom:1px solid #dce4ed}.capability-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.capability{background:white;padding:25px;border:1px solid #dce4ed;border-radius:14px;min-width:0}.capability-top{display:flex;justify-content:space-between;gap:14px;font-size:11px;color:#53667a;margin-bottom:12px}.capability-top>span{color:#2856d8;font-weight:700}.capability h3{font-size:21px;margin-bottom:10px;line-height:1.45}.capability>p{font-size:14px;line-height:1.85;color:#53667a}.capability-section .text-link{display:inline-block;margin-top:25px}.feature-grid .video-shell video,.feature-grid .zoom-trigger>img,.hero-video video{aspect-ratio:1000/380}.project-preview img[src$=".svg"]{padding:15px}.media-figure .zoom-trigger>img[src*="scene-"]{aspect-ratio:1000/380}.media-figure .zoom-trigger>img[src*="interface-chart"]{aspect-ratio:1280/555}@media(max-width:760px){.capability-section{padding:42px 0}.capability-grid{grid-template-columns:1fr;gap:16px}.capability{padding:21px}.capability h3{font-size:20px}}
+
+/* V7: full-frame media presentation. Render each asset at its native aspect ratio. */
+.video-shell video,.hero-video video,.feature-grid .video-shell video,
+.portrait video,.media-grid video{width:100%;height:auto;aspect-ratio:auto;max-height:none;object-fit:contain;background:#101820}
+.zoom-trigger>img,.feature-grid .zoom-trigger>img,.media-figure.full .zoom-trigger>img,
+.media-figure .zoom-trigger>img[src*="scene-"],.media-figure .zoom-trigger>img[src*="interface-chart"],
+.portrait .zoom-trigger>img{width:100%;height:auto;aspect-ratio:auto;max-height:none;object-fit:contain}
+.project-preview>img{object-fit:contain}
+.model .zoom-trigger>img{width:100%;height:470px;object-fit:contain;max-height:none;aspect-ratio:auto}
+.visual-wall{padding:72px 0 84px;background:#fff;border-bottom:1px solid #dce4ed}
+.visual-wall-grid{display:grid;grid-template-columns:1.45fr .85fr;grid-template-rows:minmax(290px,auto) minmax(290px,auto);gap:22px}
+.visual-highlight{min-width:0;border:1px solid #dce4ed;border-radius:18px;overflow:hidden;background:#fff;display:flex;flex-direction:column;box-shadow:0 8px 28px rgba(17,43,76,.055)}
+.visual-highlight .zoom-trigger{border:0;border-radius:0;display:flex;flex:1;min-height:0;align-items:center;justify-content:center;background:#f3f6fa}
+.visual-highlight .zoom-trigger img{display:block;width:100%;height:100%;max-height:100%;object-fit:contain;aspect-ratio:auto}
+.visual-highlight .zoom-trigger:hover img{transform:none}
+.visual-highlight.model-solo{grid-column:2;grid-row:1/3}
+.visual-highlight.model-solo .zoom-trigger{background:#1a1d22}
+.visual-highlight figcaption{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 18px 18px;font-size:13px;color:#52657c}
+.visual-highlight figcaption strong{font-size:15px;color:#172e4b}
+.visual-wall .text-link{display:inline-block;margin-top:26px}
+.web-full-preview,.concept-full-preview{margin-top:29px}
+.web-full-preview .visual-highlight .zoom-trigger img,
+.concept-full-preview .visual-highlight .zoom-trigger img{height:auto;max-height:760px;width:100%;object-fit:contain}
+.web-full-preview .visual-highlight .zoom-trigger,.concept-full-preview .visual-highlight .zoom-trigger{height:auto;min-height:0}
+@media(max-width:760px){
+ .visual-wall{padding:46px 0 56px}
+ .visual-wall-grid{grid-template-columns:1fr;grid-template-rows:auto;gap:20px}
+ .visual-highlight.model-solo{grid-column:auto;grid-row:auto}
+ .visual-highlight .zoom-trigger{flex:none}
+ .visual-highlight .zoom-trigger img{height:auto;max-height:490px}
+ .visual-highlight.model-solo .zoom-trigger img{height:auto;max-height:650px}
+ .portrait video,.portrait .zoom-trigger>img{height:auto;max-height:none}
+ .model .zoom-trigger>img{height:auto;max-height:680px}
+ .visual-highlight figcaption{align-items:flex-start}
+}
