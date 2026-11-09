@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Sheng Xing 个人技术演示：AI Agent、NotePenzo、CareerPilot、Mimi Arcana、游戏原型与数学建模证据。">
+  <title>真实演示与证据 | Sheng Xing</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/demo.css">
+</head>
+<body>
+<header><div class="container">
+  <a class="brand" href="zh.html">SX<span style="color:#346de3">.</span></a>
+  <nav aria-label="主导航">
+    <a href="zh.html">首页</a><a href="#agent">Agent</a><a href="#apps">跨平台应用</a>
+    <a href="#web">网页原型</a><a href="#research">研究与获奖</a>
+    <a href="demos.html" lang="en">English</a>
+  </nav>
+</div></header>
+<main>
+<section class="demo-intro"><div class="container">
+  <div class="kicker">SELECTED DEMOS · SOURCE-BACKED WORK</div>
+  <h1>真实画面，明确来源。<br>不把原型冒充成品。</h1>
+  <p class="lead">这是一组从本地工程、真实浏览器测试或本人提供的证据中整理的展示材料。每项都说明其测试场景、已完成的功能以及还没验证的部分。</p>
+  <div class="demo-banner">
+    <strong>本地第二版审阅稿：</strong>素材已整理，但仍有部分角色与游戏资产需要逐项核实展示许可。离线求职表单、项目测试截图和研发架构示意不等于真实招聘投递或商业产品发布。
+  </div>
+</div></section>
+
+<section class="media-section" id="agent"><div class="container">
+  <div class="kicker">AI SYSTEMS</div>
+  <h2>AgentStudio · 工具链与验证架构</h2>
+  <p class="section-desc">从任务输入到模型调用、加密记忆和工具执行，重点展示架构设计和权限边界。下图是根据实际模块绘制的技术示意，而不是伪装成系统截图。</p>
+  <div class="media-grid">
+    <article class="media-card full">
+      <figure>
+        <img src="assets/demos/agentstudio-architecture.svg" width="1200" height="430"
+          alt="AgentStudio 架构示意图：受控输入、Agent 编排、模型路由、加密记忆和工具验收">
+        <div class="body">
+          <h3>Agent 工作流架构（概念示意）</h3>
+          <p>独立模块包括模型路由、MCP/Skills 工具、私有记忆索引与执行证据检查。图中没有用户会话原文、API 密钥或私人目录信息。</p>
+          <div class="source">证据类型：项目代码与技术结构整理，不是伪造 GUI 截图。</div>
+        </div>
+      </figure>
+    </article>
+  </div>
+
+  <h2 style="margin-top:26px">CareerPilot · 真实浏览器、离线模拟申请</h2>
+  <p class="section-desc">以下是真实 Chrome + Playwright 对原创离线测试表单的操作。填写内容为合成资料，附件为合成 TXT，最后停在人工确认页面；从未访问真实雇主申请系统。</p>
+  <div class="media-grid">
+    <article class="media-card">
+      <figure>
+        <img src="assets/demos/careerpilot-offline-form.png" width="1280" height="800"
+          alt="Playwright 自动填写姓名、邮箱、城市、工作经验、工作许可和模拟简历的测试界面" loading="lazy">
+        <div class="body">
+          <h3>多步骤表单自动填写</h3>
+          <p>验证填表、下拉选项、单选按钮、选择本地测试简历附件与下一步准备流程。</p>
+          <div class="source">真实浏览器测试截图 · 仅合成数据</div>
+        </div>
+      </figure>
+    </article>
+    <article class="media-card">
+      <figure>
+        <img src="assets/demos/careerpilot-offline-review.png" width="1280" height="800"
+          alt="自动填写后进入最终审核步骤，但没有点击 Submit 的测试界面" loading="lazy">
+        <div class="body">
+          <h3>提交前人工审核</h3>
+          <p>流程可进入最终审核页，测试明确要求提交次数为零。真实网站的上传、下一步与提交都需要独立确认。</p>
+          <div class="source">真实浏览器测试截图 · 正式投递：0</div>
+        </div>
+      </figure>
+    </article>
+    <article class="media-card full">
+      <figure>
+        <video controls playsinline preload="none" poster="assets/demos/careerpilot-offline-form.png"
+          aria-label="CareerPilot 离线表单实际浏览器操作录屏">
+          <source src="assets/demos/careerpilot-offline-flow.webm" type="video/webm">
+          当前浏览器不支持 WebM 视频播放。
+        </video>
+        <div class="body">
+          <h3>浏览器自动化实录 · Offline Playwright Demo</h3>
+          <p>实际录制了 Chrome 对测试页面的字段填写、附件选择和审核流程。视频只使用合成数据，不涉及求职账号或真实应聘者资料。</p>
+          <div class="media-note">本演示属于本地离线验收，不是对 Workday、Greenhouse 或其他真实招聘网站的正式提交。</div>
+        </div>
+      </figure>
+    </article>
+  </div>
+</div></section>
+
+<section class="media-section" id="apps"><div class="container"><div class="kicker">RIGHTS REVIEW</div><h2>NotePenzo、Mellie、Mimi Arcana 和游戏画面：授权审查中</h2><p class="section-desc">这些项目的实际截图与录屏已在本地整理，但包含角色插画、游戏场景或第三方底座界面。公开使用前将逐一核对许可与素材来源，当前不上传这些图像或视频。</p><div class="media-note">所有研发源代码、账号、个人记忆库和未清权资产保持私有。</div></div></section>
+<section class="media-section" id="research"><div class="container">
+  <div class="kicker">ACADEMIC EVIDENCE</div>
+  <h2>真实证书与官方论文记录</h2>
+  <div class="media-grid">
+    <article class="media-card">
+      <figure>
+        <img class="portrait" src="assets/demos/mcm2024-authentic-redacted.webp" width="921" height="706"
+          alt="2024 Mathematical Contest in Modeling Honorable Mention 获奖证书真实截图，队友与导师姓名已遮挡，Sheng Xing 可见" loading="lazy">
+        <div class="body">
+          <h3>2024 MCM · Honorable Mention</h3>
+          <p>根据本人提供的真实证书截图裁剪并使用不透明遮挡保护队友与导师姓名；没有用 AI 重新生成证书。官方赛果显示 Control #2428445 为 Problem C Honorable Mention。</p>
+          <div class="source"><a href="https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/2024_MCM_Problem_C_Results.pdf#page=227" target="_blank" rel="noopener noreferrer">COMAP 官方赛果第 227 页</a></div>
+        </div>
+      </figure>
+    </article>
+    <article class="media-card">
+      <div class="body" style="padding-top:24px">
+        <span class="category">2024 · PUBLISHED RESEARCH</span>
+        <h3 style="margin-top:12px">Impact of Net Earnings per Share and Leverage on Stock Prices</h3>
+        <p>NVIDIA/AMD 数据的财务指标、回归与 EGARCH 股价波动研究。以公开出版社记录和 DOI 作为主要证明；不擅自公开出版方的全文 PDF 或未清权图表。</p>
+        <div class="source"><a href="https://doi.org/10.54254/2754-1169/2024.OX18493" target="_blank" rel="noopener noreferrer">访问出版社 DOI</a></div>
+        <div class="media-note">出版社作者单位与最新版简历院校存在差异，正在核对投稿记录；不超出官方证据宣称共同第一作者。</div>
+      </div>
+    </article>
+  </div>
+  <div class="media-cta"><a class="button primary" href="zh.html">返回中文首页</a><a class="button" href="demos.html" lang="en">View English version</a></div>
+</div></section>
+</main>
+<footer><div class="container">
+  <span>© 2026 Sheng Xing · 本地 V2 预览 · 真实来源分级标注 · 尚未替换公开站点</span>
+  <span><a href="zh.html">首页</a> · <a href="https://github.com/DerpyTDM520" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+</div></footer>
+</body>
+</html>

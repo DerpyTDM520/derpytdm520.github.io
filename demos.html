@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Source-backed demos of agent tooling, NotePenzo, CareerPilot, interactive web prototyping, Unreal playtests and MCM recognition.">
+  <title>Product Demos and Evidence | Sheng Xing</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/demo.css">
+</head>
+<body>
+<header><div class="container">
+  <a class="brand" href="index.html">SX<span style="color:#346de3">.</span></a>
+  <nav aria-label="Primary navigation">
+    <a href="index.html">Home</a><a href="#agent">AI Agents</a><a href="#apps">Product</a><a href="#web">Web &amp; Games</a><a href="#research">Research</a>
+    <a href="demos-zh.html" lang="zh-CN">中文</a>
+  </nav>
+</div></header>
+<main>
+<section class="demo-intro"><div class="container">
+  <div class="kicker">SELECTED DEMOS · SOURCE-BACKED WORK</div>
+  <h1>Real captures, clear provenance.<br>No prototypes passed off as launches.</h1>
+  <p class="lead">These selected materials were captured from actual local development projects, real Chrome test runs, or the applicant's supplied evidence. Each item states what was demonstrated and what is not yet validated.</p>
+  <div class="demo-banner"><strong>Local V2 review:</strong> media has been prepared for inspection. Some visual/game assets still require a final redistribution and attribution review. Offline test recordings do not demonstrate successful submissions to real employer websites.</div>
+</div></section>
+
+<section class="media-section" id="agent"><div class="container">
+  <div class="kicker">AGENT ENGINEERING</div>
+  <h2>AgentStudio · Tool and verification architecture</h2>
+  <p class="section-desc">A conceptual technical overview derived from the local agent stack, not a simulated software screenshot or a reproduction of private task history.</p>
+  <div class="media-grid">
+    <article class="media-card full"><figure>
+      <img src="assets/demos/agentstudio-architecture.svg" width="1200" height="430"
+           alt="Conceptual agent workflow diagram: user scope, orchestration, model routing, private memory and reviewed tools">
+      <div class="body"><h3>Model routing, scoped tools and memory</h3>
+        <p>Shows the boundaries between an agent orchestration layer, MCP/Skills, encrypted local memory and verified tool execution. No personal conversations, local private paths or API keys are exposed.</p>
+        <div class="source">Evidence type: architecture illustration based on implemented local modules.</div>
+      </div></figure></article>
+  </div>
+
+  <h2 style="margin-top:30px">CareerPilot · Real Chrome interaction with a synthetic test form</h2>
+  <p class="section-desc">The browser interacted with an original offline fixture and synthetic candidate data. No real employer application, real resume, or private applicant information was used.</p>
+  <div class="media-grid">
+    <article class="media-card"><figure>
+      <img src="assets/demos/careerpilot-offline-form.png" width="1280" height="800"
+           alt="Playwright completed local offline test-form fields and selected a synthetic resume" loading="lazy">
+      <div class="body"><h3>Multi-step form preparation</h3><p>Demonstrates field filling, select/radio controls and a synthetic attachment using a real Chromium automation run.</p>
+        <div class="source">Real browser screenshot · synthetic data only.</div></div>
+    </figure></article>
+    <article class="media-card"><figure>
+      <img src="assets/demos/careerpilot-offline-review.png" width="1280" height="800"
+           alt="Offline ATS fixture's final review stage; the real submit action was never taken" loading="lazy">
+      <div class="body"><h3>Human review before submission</h3><p>The automation stops at the local review stage. No final Submit action was executed.</p>
+        <div class="source">Real browser screenshot · submitted applications: 0.</div></div>
+    </figure></article>
+    <article class="media-card full"><figure>
+      <video controls playsinline preload="none" poster="assets/demos/careerpilot-offline-form.png"
+             aria-label="CareerPilot offline automated browser flow">
+        <source src="assets/demos/careerpilot-offline-flow.webm" type="video/webm">
+        Your browser cannot play WebM.
+      </video>
+      <div class="body"><h3>Recorded browser workflow</h3><p>This is a recording of genuine Chrome/Playwright interaction with an invented local test form. It must not be interpreted as a successful application on Workday, Greenhouse or another recruiting system.</p>
+        <div class="media-note">Offline synthetic test only; no employer or applicant data was sent.</div></div>
+    </figure></article>
+  </div>
+</div></section>
+
+<section class="media-section" id="apps"><div class="container"><div class="kicker">RIGHTS REVIEW</div><h2>NotePenzo, Mellie, Mimi Arcana and game previews are still under licensing review</h2><p class="section-desc">Actual local screenshots and recordings have been collected, but some contain third-party interface, illustrated characters or game assets. They will be shown publicly only after their display and attribution rights are verified.</p><div class="media-note">Private source trees, accounts, personal memory, and uncleared media are not in this release candidate.</div></div></section>
+<section class="media-section" id="research"><div class="container">
+  <div class="kicker">ACADEMIC EVIDENCE</div>
+  <h2>A genuine award certificate and a publisher DOI</h2>
+  <div class="media-grid">
+    <article class="media-card"><figure>
+      <img class="portrait" src="assets/demos/mcm2024-authentic-redacted.webp" width="921" height="706"
+           alt="Authentic cropped 2024 Mathematical Contest in Modeling Honorable Mention certificate; other team and adviser names obscured" loading="lazy">
+      <div class="body"><h3>2024 MCM · Honorable Mention</h3>
+        <p>Cropped from the applicant-supplied original screenshot, with opaque privacy redaction for other people. No AI-generated certificate has been substituted. COMAP lists Control #2428445 for Problem C Honorable Mention.</p>
+        <div class="source"><a href="https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/2024_MCM_Problem_C_Results.pdf#page=227" target="_blank" rel="noopener noreferrer">Official COMAP results, page 227</a></div>
+      </div>
+    </figure></article>
+    <article class="media-card">
+      <div class="body" style="padding-top:26px"><span class="category">2024 · PUBLISHED ARTICLE</span>
+        <h3 style="margin-top:14px">Impact of Net Earnings per Share and Leverage on Stock Prices</h3>
+        <p>A co-authored published study on EPS, leverage and NVIDIA/AMD share prices, including regression and EGARCH-related analysis. The publisher's DOI is the primary evidence; full copyrighted text is not re-uploaded.</p>
+        <div class="source"><a href="https://doi.org/10.54254/2754-1169/2024.OX18493" target="_blank" rel="noopener noreferrer">Publisher DOI and article record</a></div>
+        <div class="media-note">A discrepancy in the publisher affiliation must be reviewed before asserting affiliation-specific details or equal-first authorship.</div>
+      </div>
+    </article>
+  </div>
+  <div class="media-cta"><a class="button primary" href="index.html">Back to homepage</a><a class="button" href="demos-zh.html" lang="zh-CN">中文</a></div>
+</div></section>
+</main>
+<footer><div class="container">
+  <span>© 2026 Sheng Xing · V2 local review · Provenance-labeled visuals · Not yet deployed to public site</span>
+  <span><a href="index.html">Home</a> · <a href="https://github.com/DerpyTDM520" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+</div></footer>
+</body>
+</html>
