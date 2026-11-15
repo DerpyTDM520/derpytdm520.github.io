@@ -4,7 +4,7 @@ Bilingual static portfolio presenting anonymized engineering cases and academic 
 
 Public case labels describe capabilities, not unreleased product brands. Visual media uses full original frame compositions. Public titles and captions remain generic; product names may be visible inside the original pictures. Original project files, private source code and datasets are not distributed.
 
-Pages: index.html / zh.html, demos.html / demos-zh.html, academic.html / academic-zh.html. Shared styles and interaction code are in assets/portfolio-v6.css and assets/portfolio-v6.js. No analytics or third-party runtime requests.
+Pages: index.html / zh.html, demos.html / demos-zh.html, academic.html / academic-zh.html. The V10 visual system is in assets/portfolio-v10.css and assets/portfolio-v10.js, layered over the existing static page structure and image viewer. No analytics or third-party runtime requests. Space Grotesk is self-hosted with its SIL Open Font License in assets/fonts/SpaceGrotesk-OFL.txt; see DESIGN.md for presentation and accessibility rules.
 
 The local AI workbench covers inference, encrypted retrieval, MCP tools, image-to-video generation, media conversion, asset checks, approved regression tasks and resource safeguards. Verification scopes are explained on the demos page; module success does not imply universal end-to-end automation.
 
