@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index,follow">
+<meta name="description" content="World exploration mobile interface study using 100% synthetic demonstration data. Not a released application.">
+<title>World Exploration · Synthetic Mobile UI Study</title>
+<link rel="stylesheet" href="./demo.css">
+<script defer src="./demo.js"></script>
+</head>
+<body>
+<div class="prototype-label" role="note"><span class="tag-dot"></span> SYNTHETIC UI DEMO <span class="label-sep">/</span> NOT A RELEASED APP</div>
+<header class="site-header">
+  <a class="brand" href="#explore" aria-label="World Exploration demo home"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 42 42" fill="none"><circle cx="21" cy="21" r="13" stroke="currentColor" stroke-width="1.7"/><ellipse cx="21" cy="21" rx="19" ry="7" transform="rotate(-30 21 21)" stroke="currentColor" stroke-width="1.2"/><circle cx="31" cy="10" r="3" fill="currentColor"/></svg></span><span class="brand-word">DISCOVERY</span></a>
+  <div class="header-actions"><span class="header-note">UI STUDY</span><button class="icon-button" data-target="search" aria-label="Search synthetic examples"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></button></div>
+</header>
+<main id="main" tabindex="-1">
+<section class="view view-home" data-view="explore">
+  <div class="hero-copy"><p class="eyebrow">WORLD EXPLORATION / INTERFACE CONCEPT</p><h1>Stories beyond<br><em>the horizon.</em></h1><p class="lede">Three ways to explore an imagined world. A mobile-first interface study built with entirely invented content.</p>
+  <button class="gold-button" data-target="culture">Begin exploring <span aria-hidden="true">↗</span></button></div>
+  <div class="globe-stage" role="img" aria-label="Stylized fictional globe made from procedurally generated light points"><canvas id="globe" width="650" height="650"></canvas><span class="globe-pin"><span class="pin-n">01</span><span>Lantern Harbor</span></span><span class="planet-note">A conceptual globe · not real map data</span></div>
+  <section class="worlds">
+   <p class="eyebrow">THREE WAYS IN</p><h2>Choose a world</h2>
+   <div class="world-cards">
+    <button class="world-card culture" data-target="culture"><span class="world-num">01 / CULTURE</span><strong>Places &amp; myths</strong><span>Invented cities and source-aware reading patterns.</span><b aria-hidden="true">↗</b></button>
+    <button class="world-card folklore" data-target="folklore"><span class="world-num">02 / FOLKLORE</span><strong>Whispered tales</strong><span>How an imagined folktale moves between tellers.</span><b aria-hidden="true">↗</b></button>
+    <button class="world-card campus" data-target="campus"><span class="world-num">03 / CAMPUS</span><strong>Campus journeys</strong><span>A schematic walk through a made-up university.</span><b aria-hidden="true">↗</b></button>
+   </div>
+  </section>
+</section>
+<section class="view collection" data-view="culture" hidden>
+  <div class="collection-top culture"><p class="eyebrow">01 / CULTURAL EXPLORATION</p><h1>Culture<br><em>&amp; Myth.</em></h1><p class="intro">From architecture to storytelling, follow an entirely fictional record from its overview to a structured reading experience.</p><div class="pill-note">✦ Synthetic record · No historical claims</div></div>
+  <div class="section-bar"><h2>Featured stories</h2><span>01 — 02</span></div>
+  <button class="entry-card" data-open="lantern"><span class="entry-kind">ILLUSTRATIVE CITY / FICTION</span><strong>The Lantern Harbor</strong><span class="entry-summary">A city of floating lights, invented to demonstrate a sourced-reading interface.</span><span class="entry-foot">Read example <b>↗</b></span></button>
+  <button class="entry-card muted" data-open="garden"><span class="entry-kind">GARDEN / FICTION</span><strong>The Glass Gardens</strong><span class="entry-summary">An imaginary conservatory and a small catalog of narratives.</span><span class="entry-foot">Read example <b>↗</b></span></button>
+</section>
+<section class="view collection" data-view="folklore" hidden>
+  <div class="collection-top folklore"><p class="eyebrow">02 / FOLKTALE STUDY</p><h1>Folk Horror<br><em>Archives.</em></h1><p class="intro">An interface for researching stories while distinguishing a tale from a verifiable event. Every example here is invented.</p><div class="pill-note">◆ Fictional folklore · Demo only</div></div>
+  <div class="section-bar"><h2>Archive entries</h2><span>01 — 02</span></div>
+  <button class="entry-card folklore" data-open="whisper"><span class="entry-kind">ORIGINAL TALE / FICTION</span><strong>The Whispering Grove</strong><span class="entry-summary">A harmless invented legend about a path that changes with the fog.</span><span class="entry-foot">Read example <b>↗</b></span></button>
+  <button class="entry-card muted" data-open="moon"><span class="entry-kind">ORIGINAL TALE / FICTION</span><strong>The Moonlit Bell</strong><span class="entry-summary">An imagined oral history of a clock tower with no clock.</span><span class="entry-foot">Read example <b>↗</b></span></button>
+</section>
+<section class="view collection" data-view="campus" hidden>
+  <div class="collection-top campus"><p class="eyebrow">03 / CAMPUS EXPLORATION</p><h1>A campus<br><em>of possibility.</em></h1><p class="intro">Explore a compact schematic environment. Every building, school name and path is fictional.</p><div class="pill-note">▣ Fictional campus · Not navigation</div></div>
+  <section class="scene-wrap">
+   <div class="scene-title"><strong>Cedarfield Campus</strong><span>Illustrative map · original shapes</span></div>
+   <div class="scene"><div class="scene-map" id="scene-map"><div class="path-1"></div><div class="path-2"></div><div class="building b1"></div><div class="building b2"></div><div class="building b3"></div><div class="building b4"></div><div class="building b5"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="tree t4"></div><div class="scene-cursor" id="campus-cursor"></div></div>
+    <div class="scene-controls"><span>OVERVIEW</span><button id="scene-step" type="button">Walk the path <span>→</span></button></div>
+   </div>
+   <p class="scene-credit">Entirely generated UI illustration · No real campus or geographic measurements.</p>
+  </section>
+  <div class="section-bar"><h2>Place highlights</h2><span>02 AREAS</span></div>
+  <div class="detail-row"><span class="detail-icon">⌂</span><div><strong>Observatory Hall</strong><small>Invented location / North courtyard</small></div></div>
+  <div class="detail-row"><span class="detail-icon">⌁</span><div><strong>East Library Walk</strong><small>Invented location / Study quarter</small></div></div>
+</section>
+<section class="view reader" data-view="reader" hidden>
+  <div class="reader-tools"><button id="reader-back" class="back-button"><span>←</span> <span id="reader-back-label">Culture</span></button><button id="reader-save" class="save-button" aria-pressed="false">☆ Save</button></div>
+  <div class="reader-intro">
+   <p class="eyebrow" id="reader-kicker">01 / CULTURE / SYNTHETIC</p>
+   <h1 id="reader-title">The Lantern Harbor</h1>
+   <p class="reader-subtitle" id="reader-subtitle">A fictional journey through memory and light.</p>
+   <div class="reader-meta"><div><small>RECORD</small><strong>Original example</strong></div><div><small>STATUS</small><strong>Fictional demo</strong></div></div>
+  </div>
+  <div class="reader-illustration" aria-hidden="true"><div class="lantern-orbit"><span>✦</span><span>✧</span><span>✦</span></div><div class="lantern-tower"></div></div>
+  <div class="source-truth"><strong>Synthetic content only</strong><p>This text is original demonstration material. It does not describe an actual place, community, event, or historical source.</p></div>
+  <section class="reading-section"><p class="eyebrow">01 / INTRODUCTION</p><h2>On the edge of an invented sea</h2><p>In the fictional Lantern Harbor, every window holds a small light. At dusk the city seems to drift, as if its streets could rearrange themselves before morning.</p><p>The scene exists only to illustrate how a long-form reading interface can organize a narrative into distinct, navigable parts.</p></section>
+  <section class="reading-section"><p class="eyebrow">02 / PERSPECTIVE</p><h2>A city made of stories</h2><p>Some residents of the imaginary harbor collect maps. Others collect stories about the places they have never visited. No account is presented as a historical fact.</p><p>Spacing, typography, contrast, and reading progression are the actual subjects of this design exercise.</p></section>
+  <section class="reading-section"><p class="eyebrow">03 / INTERACTION</p><h2>Continue the journey</h2><p>Use the bookmark control to save this example into the session-only demo collection. Your choice stays within this page and is not uploaded or saved to a server.</p></section>
+  <button class="reader-finish" data-target="saved">View saved examples <span>↗</span></button>
+</section>
+<section class="view saved" data-view="saved" hidden>
+  <p class="eyebrow">YOUR SPACE / UI STUDY</p><h1>Keep the stories<br><em>worth revisiting.</em></h1><p class="lede">A local-only example of saved items. No account, tracking or network storage is used.</p>
+  <div class="saved-summary"><span class="saved-icon">⌑</span><div><small>THIS SESSION</small><strong id="saved-count">0 examples saved</strong></div></div>
+  <div id="saved-list"></div>
+  <button class="ghost-button" data-target="culture">Explore fictional entries <span>↗</span></button>
+</section>
+<section class="view search" data-view="search" hidden>
+  <p class="eyebrow">DISCOVERY / SYNTHETIC EXAMPLES</p><h1>Find a story.</h1>
+  <label for="search-input">Search invented titles</label>
+  <input id="search-input" type="search" placeholder="Try “Harbor” or “Grove”…" autocomplete="off">
+  <div id="search-results" aria-live="polite"></div>
+</section>
+<section class="view settings" data-view="settings" hidden>
+  <p class="eyebrow">PREFERENCES / DEMO</p><h1>Explore at<br><em>your own pace.</em></h1><p class="lede">These are interface controls for an isolated demonstration, not account settings.</p>
+  <div class="settings-section"><p class="eyebrow">INTERFACE LANGUAGE</p><h2>Display language</h2><p>Switch the basic interface labels. This standalone sample does not contain translated research articles.</p>
+   <div class="language-selector" role="radiogroup" aria-label="Display language"><button class="is-active" aria-checked="true" role="radio" id="demo-lang-en">English</button><button aria-checked="false" role="radio" id="demo-lang-zh">简体中文</button></div>
+  </div>
+  <div class="settings-section"><p class="eyebrow">DISPLAY</p><h2>Comfortable motion</h2><p>Reduce motion without losing the controls that matter.</p><label class="switch-row"><span>Reduce motion</span><input id="reduced-motion" type="checkbox"></label></div>
+  <div class="source-truth"><strong>Built for portfolio review</strong><p>The underlying research product is still under active development. This standalone UI adaptation uses synthetic, fictional content and does not claim public release readiness.</p></div>
+</section>
+</main>
+<nav class="bottom-nav" aria-label="Demo navigation">
+ <button data-target="explore" class="active"><span class="nav-icon">◎</span><span>Explore</span></button>
+ <button data-target="search"><span class="nav-icon">⌕</span><span>Search</span></button>
+ <button data-target="saved"><span class="nav-icon">⌑</span><span>Saved</span></button>
+ <button data-target="settings"><span class="nav-icon">☼</span><span>Settings</span></button>
+</nav>
+</body></html>

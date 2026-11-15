@@ -1,0 +1,55 @@
+{
+  "status": "PUBLIC_SAFE_SYNTHETIC_UI_DEMO_CANDIDATE",
+  "checks": 27,
+  "provenance": "Independent original adaptation of an unfinished mobile product design. All names and content fictional.",
+  "notActualApp": true,
+  "noRealResearchSources": true,
+  "noExternalNetwork": true,
+  "notARealCampus": true,
+  "noTracking": true,
+  "noPersonalInformation": true,
+  "portrait": {
+    "width": 390,
+    "height": 844,
+    "devicePixelRatio": 2
+  },
+  "screenshots": [
+    "01_home.png",
+    "02_culture.png",
+    "03_reader.png",
+    "04_reader_chapter.png",
+    "05_saved.png",
+    "06_folklore.png",
+    "07_folklore_reader.png",
+    "08_campus.png",
+    "09_campus_walk.png",
+    "10_search.png",
+    "11_settings.png",
+    "12_language.png"
+  ],
+  "video": "World_Exploration_Synthetic_UI_390x844.mp4",
+  "bytes": 974072,
+  "errors": [],
+  "external": [],
+  "recordedDate": "2026-11-15",
+  "publicReviewRequired": true,
+  "videoValidation": {
+    "decoded": true,
+    "width": 390,
+    "height": 844,
+    "fps": 25.0,
+    "durationSeconds": 16.52,
+    "sha256": "6e8e19ea96e915752b96ed6daf119c17138b6070ff95c2b8ab3133d36bc58f96"
+  },
+  "poster": "World_Exploration_Synthetic_Poster.webp",
+  "contactSheet": "World_Exploration_12_Screen_Contact.webp",
+  "publicStaticFiles": [
+    "index.html",
+    "demo.css",
+    "demo.js",
+    "World_Exploration_Synthetic_UI_390x844.mp4",
+    "World_Exploration_Synthetic_Poster.webp",
+    "World_Exploration_12_Screen_Contact.webp"
+  ],
+  "humanRightsReview": "All example texts and graphics originated from the synthetic standalone demo; no real source media were copied."
+}
