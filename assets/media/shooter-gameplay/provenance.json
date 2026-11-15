@@ -1,0 +1,55 @@
+{
+  "recordedDate": "2026-11-15",
+  "capture": "Packaged Unreal Engine development build, automated normal input-handler control, normal-speed silent window capture. Not a manual playthrough or final product.",
+  "clips": [
+    {
+      "source": "03-m4-pressure-zone.mp4",
+      "start": 5,
+      "seconds": 20,
+      "name": "m4-combat-20s",
+      "label": "M4 combat and two reloads",
+      "file": "m4-combat-20s.mp4",
+      "poster": "m4-combat-20s.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "duration": 20.0,
+      "frames": 591,
+      "averageFps": 29.55,
+      "bytes": 5395340,
+      "sha256": "d4c5d711ebb1602e1b51032a7adc560f42b9f575569d5da73eda37ff900bbfad",
+      "sourceSha256": "deacef8bc78b11289b011a8258ebed38357c144e71212e10fc75b382e6581b9b",
+      "audioStreams": 0,
+      "normalSpeed": true,
+      "fullFrame": true,
+      "decodeExit": 0
+    },
+    {
+      "source": "02-facility-interaction.mp4",
+      "start": 21,
+      "seconds": 8,
+      "name": "facility-interaction-8s",
+      "label": "Facility operation and objective update",
+      "file": "facility-interaction-8s.mp4",
+      "poster": "facility-interaction-8s.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "duration": 8.0,
+      "frames": 235,
+      "averageFps": 29.375,
+      "bytes": 479368,
+      "sha256": "b10c4ac212625e6bd612b69658abad99a1a4f2c99d9749131c08539a43310a4d",
+      "sourceSha256": "b1c4cdaf73f7aa22b300c5db93f0f85b3f2db4ded71270aa28ad6af4e52ff1bd",
+      "audioStreams": 0,
+      "normalSpeed": true,
+      "fullFrame": true,
+      "decodeExit": 0
+    }
+  ],
+  "noBossOrVictoryFootage": true,
+  "noRawAssetsDistributed": true,
+  "credits": "../../../asset-credits.html#shooter-gameplay-credits"
+}
