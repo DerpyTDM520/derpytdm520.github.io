@@ -1,0 +1,143 @@
+/* Compact, authentic Atlas development capture — original pixels, never stretched.
+   Intentionally scoped to the web case; other portfolio media remain unchanged. */
+/* Keep the sticky navigation visually solid over dense full-frame screenshots. */
+body.page-demos .site-header {background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none;}
+#web .atlas-actual {
+  --actual-gold: #dfbb7d;
+  box-sizing: border-box;
+  max-width: 860px;
+  margin: clamp(24px,4vw,38px) auto 0;
+  padding: clamp(20px,3vw,34px);
+  border: 1px solid #344860;
+  border-radius: 20px;
+  background:
+    radial-gradient(420px 330px at 13% 42%,rgba(52,100,142,.22),transparent 74%),
+    linear-gradient(150deg,#0e1b2d,#08101c 74%);
+  color: #f4f0e9;
+  box-shadow: 0 12px 35px rgba(17,39,65,.12);
+  display: grid;
+  grid-template-columns: minmax(0,190px) minmax(0,1fr);
+  align-items: center;
+  gap: clamp(20px,4vw,40px);
+  scroll-margin-top: 102px;
+  overflow: hidden;
+}
+#web .atlas-actual *,
+#web .atlas-actual *::before,
+#web .atlas-actual *::after { box-sizing:border-box; }
+#web .atlas-actual__alias {display:block;height:0;scroll-margin-top:102px}
+#web .atlas-actual__media {min-width:0;width:100%;max-width:190px;justify-self:center;}
+#web .atlas-actual__device {
+  width:100%;padding:6px;
+  background:linear-gradient(145deg,#273b55,#070b12);
+  border:1px solid #5e7994;
+  border-radius:21px;
+  box-shadow:0 18px 32px rgba(0,0,0,.28), 0 0 28px rgba(90,145,190,.13);
+}
+#web .atlas-actual__device video {
+  display:block;
+  width:100%;height:auto;
+  aspect-ratio:390 / 844;
+  object-fit:contain;
+  max-height:none;
+  border-radius:15px;
+  background:#080e19;
+}
+#web .atlas-actual__format {
+  display:block;margin-top:10px;
+  text-align:center;color:#9db4c7;
+  font-size:10px;letter-spacing:.1em;
+}
+#web .atlas-actual__body {min-width:0;align-self:center;display:flex;flex-direction:column;align-items:start;gap:13px;}
+#web .atlas-actual__kicker {font-size:10px;font-weight:750;letter-spacing:.12em;color:var(--actual-gold);margin:0;}
+#web .atlas-actual__body h3 {
+  font-size:clamp(20px,2.5vw,29px);
+  line-height:1.25;letter-spacing:-.02em;
+  font-weight:720;max-width:19em;color:#fff6eb;
+  margin:0;
+  overflow-wrap:break-word;
+}
+#web .atlas-actual__intro {
+  font-size:14px;line-height:1.62;color:#cad6e2;
+  margin:0;max-width:43ch;overflow-wrap:break-word;
+}
+#web .atlas-actual__facts {
+  border-top:1px solid rgba(220,232,244,.17);
+  padding-top:12px;
+  display:grid;gap:5px;
+  font-size:11px;line-height:1.5;color:#b1c0d0;
+}
+#web .atlas-actual__play {
+  min-height:43px;
+  max-width:100%;
+  display:inline-flex;justify-content:space-between;align-items:center;gap:18px;
+  padding:9px 13px;border-radius:10px;
+  background:#e9c68f;color:#1c2731;
+  font-weight:720;font-size:12px;
+  text-decoration:none;
+  transition:background-color .15s ease;
+}
+#web .atlas-actual__play:hover{background:#ffe0ae;}
+#web .atlas-actual__play:focus-visible{outline:3px solid #fff;outline-offset:3px}
+#web .atlas-actual__play span {font-size:17px;font-weight:500;}
+#web .atlas-actual__notice {
+  font-size:11px;line-height:1.5;color:#aab8c6;
+  margin:0;max-width:48ch;
+}
+@media (max-width:760px){
+ #web .atlas-actual {
+   padding:18px;
+   margin-top:25px;
+   grid-template-columns:minmax(0,126px) minmax(0,1fr);
+   align-items:start;gap:16px;
+   border-radius:16px;
+ }
+ #web .atlas-actual__device {padding:4px;border-radius:15px}
+ #web .atlas-actual__device video {border-radius:10px}
+ #web .atlas-actual__body {gap:10px}
+ #web .atlas-actual__body h3 {font-size:17px;line-height:1.3}
+ #web .atlas-actual__intro {font-size:12px;line-height:1.5}
+ #web .atlas-actual__facts {padding-top:8px;font-size:10px;line-height:1.4}
+ #web .atlas-actual__kicker {font-size:9px;line-height:1.5;letter-spacing:.08em}
+ #web .atlas-actual__play {font-size:11px;min-height:44px;padding:8px 10px;gap:8px}
+ #web .atlas-actual__notice {font-size:10px;line-height:1.5}
+ #web .atlas-actual__format {font-size:9px}
+}
+@media (max-width:380px){
+ #web .atlas-actual {grid-template-columns:102px minmax(0,1fr);gap:11px;padding:13px}
+ #web .atlas-actual__body h3 {font-size:16px}
+ #web .atlas-actual__intro {font-size:11.5px}
+}
+@media (prefers-reduced-motion:reduce){
+ #web .atlas-actual__play {transition:none}
+}
+
+/* The older full-frame browser screenshot remains uncropped, but no longer
+   dominates the entire Web portfolio case. Lightbox keeps its original detail. */
+#web .web-full-preview {
+  grid-column: 1 / -1;
+  max-width: 860px;
+  width:100%;
+  margin: 18px auto 0;
+}
+#web .web-full-preview .visual-highlight {
+  min-width:0;
+}
+#web .web-full-preview .visual-highlight .zoom-trigger {
+  display: grid;
+  place-items: center;
+  max-height: 390px;
+  background: #eef2f7;
+  overflow: hidden;
+}
+#web .web-full-preview .visual-highlight .zoom-trigger img {
+  display: block;
+  width: 100%;
+  height:auto;
+  max-height: 365px;
+  object-fit: contain;
+}
+@media(max-width:760px) {
+ #web .web-full-preview .visual-highlight .zoom-trigger {max-height:260px}
+ #web .web-full-preview .visual-highlight .zoom-trigger img {max-height:250px}
+}
