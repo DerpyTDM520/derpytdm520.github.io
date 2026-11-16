@@ -1,0 +1,99 @@
+{
+  "project": "星芽小队 · 裂隙守城",
+  "version": "v21 十二武装 (working prototype)",
+  "recordedDate": "2026-11-16",
+  "video": {
+    "file": "starbud-recruit-and-defense.mp4",
+    "size": [
+      430,
+      932
+    ],
+    "durationSeconds": 30.04,
+    "fps": 25.0,
+    "bytes": 2275933,
+    "sha256": "e78ab15298d232d66ef3acb362d5c7b9cf5d1c5b2d2f5dec329594c0d21d1d25",
+    "audio": "none",
+    "speed": "normal 1x gameplay"
+  },
+  "screenshots": [
+    {
+      "file": "home.webp",
+      "size": [
+        860,
+        1864
+      ],
+      "bytes": 229852,
+      "sourceScreenshotSha256": "c4cde7c8c3169012299c0c38485484a8812d3853d88fb322bf8e8f0f0b46fe4a",
+      "sha256": "834924f5a92861d39c6fb379e773d3f5e044f1e36d68cd70a7cc62a7e6b10567"
+    },
+    {
+      "file": "roster.webp",
+      "size": [
+        860,
+        1864
+      ],
+      "bytes": 139664,
+      "sourceScreenshotSha256": "deabe56f0631c37dce37d6bc25251ebd1e7078e0aac2ccae0453a718502ad981",
+      "sha256": "6cd27555221194c863540df5f3e8a8c96063f2398fd960b239f1ab59539b08ee"
+    },
+    {
+      "file": "recruit.webp",
+      "size": [
+        860,
+        1864
+      ],
+      "bytes": 124836,
+      "sourceScreenshotSha256": "e8b9c5561a8c3b095045ef4cde75b94661e263feeb961ef86ec34fecaab7b746",
+      "sha256": "6a31119c0706e481842084706f82fbc42755e6e8f749fad78b16cc16a6a359b6"
+    },
+    {
+      "file": "formation.webp",
+      "size": [
+        860,
+        1864
+      ],
+      "bytes": 113134,
+      "sourceScreenshotSha256": "11efd10edc47c20fe9d70fa45440ca71d20bb03397e96191e4f02e7355989b40",
+      "sha256": "209d6236854afa107aeee0042a2a5f53943fef7e7adfa1b44940f9957bcb2de1"
+    },
+    {
+      "file": "battle-ui.webp",
+      "size": [
+        860,
+        1864
+      ],
+      "bytes": 155150,
+      "sourceScreenshotSha256": "9b16d0d6c1a48d391ac32ae9b5aecfc43a90d559f3e08070e6552bac63509801",
+      "sha256": "c32f732c35bff5e9aa9762ef6bea7a1880c75c355b3269ec56ca34cd1b6a4756"
+    },
+    {
+      "file": "battle-scene.webp",
+      "size": [
+        1000,
+        420
+      ],
+      "bytes": 124664,
+      "sourceScreenshotSha256": "234689ac8ed0e3be2ed8da41c4ba8d61d447f41d1f621abbca3d651f8f44f17a",
+      "sha256": "79d4e018a5e044d208c616e230bb5a35ab7b8d8506a6bffb3ab2463029345edb"
+    }
+  ],
+  "captureMethod": "Actual isolated Chrome browser viewport; ordinary UI clicks automated with Playwright. Fresh game session; no existing user save, no demo unlock code, no direct game-state edits.",
+  "coverage": [
+    "five-hero roster",
+    "normal-price recruitment",
+    "one-click star merge",
+    "castle defense",
+    "panorama toggle",
+    "meteor barrage"
+  ],
+  "notClaimed": [
+    "complete playthrough",
+    "native WeChat or Douyin mini-app integration",
+    "live payments",
+    "real advertisements",
+    "production release"
+  ],
+  "artProvenance": "Project ART_LOG, WALK_ART_LOG, NEW_HERO_ART and EXPEDITION_UPDATE record original image-generated character/scene atlases and in-project SVG/UI artwork. No new artwork was generated for this recording.",
+  "sourceArtworkOrGameCodePublished": false,
+  "credits": "../../../asset-credits.html#webgame-credits"
+}

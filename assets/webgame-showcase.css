@@ -1,0 +1,35 @@
+/* Scoped gameplay exhibit; the approved cinematic portfolio remains unchanged. */
+#webgame{scroll-margin-top:100px}
+#webgame .webgame-feature{display:grid;grid-template-columns:212px minmax(0,1fr);gap:35px;align-items:center;padding:26px 30px;border:1px solid #88b1b33b;border-radius:14px;background:linear-gradient(125deg,#102b32e8,#0b1c25e8)}
+#webgame .webgame-recording{margin:0;max-width:212px;width:100%;align-self:start}
+#webgame .webgame-video-cover{display:block;position:relative;border:1px solid #94c1be6b;border-radius:14px;padding:5px;background:#0c1d24;overflow:hidden;box-shadow:0 12px 35px #0005}
+#webgame .webgame-video-cover img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:430/932;object-fit:contain;border-radius:9px}
+#webgame .webgame-play{position:absolute;bottom:17px;left:calc(50% - 22px);width:44px;height:44px;display:grid;place-items:center;border:1px solid #eee4d1bc;background:#102b37e8;border-radius:50%;color:#fff1d8;transition:background .2s,transform .2s}
+#webgame .webgame-play svg{width:24px;height:24px}
+#webgame .webgame-video-cover:hover .webgame-play{background:#35656ee8;transform:scale(1.06)}
+#webgame .webgame-recording figcaption{font-size:11px;line-height:1.55;color:#afc7c8;text-align:center;margin-top:12px}
+#webgame .webgame-overview{min-width:0}
+#webgame .webgame-overview>h3{font-size:28px;line-height:1.3;margin:0 0 15px;color:#f5ead4}
+#webgame .webgame-overview>p{font-size:14px;line-height:1.8;margin:0 0 14px;color:#c1d3d6;max-width:67ch}
+#webgame .webgame-facts{display:flex;flex-wrap:wrap;gap:14px;color:#98bbb9;font-size:12px;line-height:1.6;margin:0 0 10px}
+#webgame .webgame-open{display:inline-flex;align-items:center;gap:13px;min-height:44px;color:#ebca98;font-size:13px;text-decoration:none}
+#webgame .webgame-open svg{width:20px;height:20px}
+#webgame .webgame-scene{margin:13px 0 0;border-top:1px solid #a5c7cd27;padding-top:15px}
+#webgame .webgame-scene .zoom-trigger{width:100%;display:block;position:relative;padding:0;border:1px solid #a5c7cd3b;border-radius:9px;background:#091b24;overflow:hidden}
+#webgame .webgame-scene img{width:100%;height:auto;display:block;aspect-ratio:1000/420;object-fit:contain;max-height:270px}
+#webgame .webgame-scene figcaption{font-size:11px;line-height:1.55;color:#a1babe;margin-top:9px}
+#webgame .webgame-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px;margin:22px 0 0}
+#webgame .webgame-gallery figure{margin:0;border:1px solid #80a7b43a;border-radius:11px;overflow:hidden;background:#0d232b}
+#webgame .webgame-gallery .zoom-trigger{position:relative;display:grid;place-items:center;width:100%;height:225px;padding:8px;border:0;border-radius:0;background:#0a1c23;overflow:hidden}
+#webgame .webgame-gallery img{display:block;width:auto;height:100%;max-width:100%;object-fit:contain}
+#webgame .webgame-gallery figcaption{padding:12px 16px;font-size:13px;line-height:1.5;color:#d5e6e5}
+#webgame .zoom-label{position:absolute;right:10px;bottom:10px;background:#0c2734ec;color:#f0e7d3;border:1px solid #c1dadd44;border-radius:6px;font-size:11px;padding:5px 8px}
+#webgame .section-footnote a{color:#eccb99;text-decoration:underline;text-underline-offset:3px}
+#webgame-credits{scroll-margin-top:100px}
+#webgame-credits p{color:#c1d2d4;font-size:14px;line-height:1.85;max-width:950px}
+#webgame-credits a{color:#f0cd98;text-decoration:underline;text-underline-offset:4px}
+#more-projects .webgame-home-card .project-preview img{width:100%;height:100%;object-fit:contain}
+@media(max-width:900px){#webgame .webgame-feature{grid-template-columns:180px minmax(0,1fr);gap:24px;padding:24px}#webgame .webgame-overview>h3{font-size:25px}#webgame .webgame-overview>p{font-size:13px}#webgame .webgame-gallery .zoom-trigger{height:200px}}
+@media(max-width:600px){#webgame .webgame-feature{grid-template-columns:112px minmax(0,1fr);gap:15px;padding:16px 13px;align-items:start}#webgame .webgame-recording figcaption{font-size:9px;line-height:1.7;margin-top:9px}#webgame .webgame-video-cover{padding:3px;border-radius:11px}#webgame .webgame-video-cover img{border-radius:7px}#webgame .webgame-play{bottom:11px}#webgame .webgame-overview>h3{font-size:21px;line-height:1.25;margin-bottom:10px}#webgame .webgame-overview>p{font-size:12px;line-height:1.75;margin-bottom:9px}#webgame .webgame-facts{font-size:10px;gap:5px;margin-bottom:7px}#webgame .webgame-open{font-size:11px;gap:7px;min-height:44px}#webgame .webgame-scene{margin-top:10px;padding-top:10px}#webgame .webgame-scene figcaption{font-size:10px;line-height:1.6}#webgame .webgame-gallery{gap:10px;margin-top:16px}#webgame .webgame-gallery .zoom-trigger{height:166px;padding:5px}#webgame .webgame-gallery figcaption{font-size:11px;padding:9px 10px}#webgame .zoom-label{font-size:9px;padding:3px 5px;right:5px;bottom:5px}#webgame .webgame-scene .zoom-label{display:none}#webgame-credits p{font-size:13px}}
+@media(max-width:360px){#webgame .webgame-feature{grid-template-columns:95px minmax(0,1fr);gap:12px;padding:14px 11px}#webgame .webgame-overview>h3{font-size:19px}#webgame .webgame-gallery .zoom-trigger{height:140px}#webgame .webgame-gallery figcaption{font-size:10px;padding:9px 7px}}
+@media(prefers-reduced-motion:reduce){#webgame .webgame-play{transition:none;transform:none}}
