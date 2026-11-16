@@ -1,40 +1,21 @@
-# Portfolio visual system — V11 refinement
+# Portfolio design — Cinematic implementation
 
-## Direction
-A luminous technical environment: visible deep-blue light fields, fine engineering grids, cyan accents, readable layered surfaces and real project evidence. Avoid empty near-black stretches and overly small low-contrast type. The portfolio is a presentation of engineering work, not a fictional SaaS company or a cinematic mock product.
+The current presentation implements the user-approved November 2026 concept: a teal night sky, illuminated planetary arc, cyan/gold light trails, mountain foreground, ivory serif headings and gold actions. It is a working static website, not an image-only mockup.
 
-## Content and evidence
-- Preserve the original images and videos. Never replace a functioning interface with a regenerated, synthetic imitation.
-- Use `object-fit: contain` for evidence images/video. Keep the full original visible; use an accessible lightbox or native playback to inspect detail.
-- Describe browser recordings, native simulator captures, real engine runs and design concepts accurately and separately.
-- Do not invent metrics, clients, testimonials, awards or release-readiness claims.
-- Retain source/asset credits, publication links, bilingual pages and existing project anchors.
+## Content
+Headings describe the work directly: AI tools, notebook software, interactive worlds, projects and research. Avoid vague aspirational slogans. English and Chinese pages retain real navigation, category filters, source evidence and image viewers.
 
-## Tokens
-- Page background: `#10243d`; surface: `#142d49`; high surface: `#1d3d5d`.
-- Foreground: `#f1f7ff`; body secondary: `#bfd0e2`; accent: `#8aedf2`.
-- Hairline: `#92c5ef38`.
-- Display face: Space Grotesk, self-hosted under its SIL Open Font License. CJK falls back to local system sans-serif fonts.
-- Section spacing: approximately 56–62px desktop and 38–45px mobile; page gutters scale from 18px to 48px.
-- Major headings use modest negative tracking; CJK text should never be squeezed into desktop-sized labels.
+## Composition
+The home hero contains three native linked project panels, followed by three selected project cards. Five additional projects remain below. All labels, buttons and cards are native HTML. Decorative raster layers and a small dust canvas are marked aria-hidden and cannot capture pointer input.
 
-## Components
-- Home: short headline and two original project surfaces, followed by selected cases, capabilities, evidence, visual studies and research.
-- Work: category filtering with state in the URL. No project is removed by the filter implementation; deep links must reveal their matching section.
-- Research: white source figures are retained as white; labels, controls and surrounding surfaces use the dark design system.
-- A portrait recording is never expanded to the full width of a desktop column. Use a bounded portrait frame and an explicit full-size playback option.
-- Modal video and image previews must close using Escape and return keyboard focus.
+## Authenticity
+Original project screenshots and recordings are retained. Cinematic concept images of imaginary product interfaces are not presented as real work. The environmental background is decorative art derived from the approved generated concept, not geography or gameplay. Native recording provenance, source credits and development limitations remain unchanged.
 
-## Motion and performance
-Use CSS transforms/opacity and a one-time IntersectionObserver entrance. Respect `prefers-reduced-motion`. No scroll hijacking, forced pointer replacement, decorative WebGL background, perpetual particle loop or multiple autoplay videos. Page content is visible without JavaScript; media triggers remain real links.
+## Responsive and accessible behavior
+At narrow widths the hero project panels form a swipeable row; selected cards stack. Real MP4 links work without JavaScript. Existing modal playback supports Escape and focus return. The decorative canvas is static with reduced motion and stops when the hero or page is not visible. Static perspective is kept even when animation is disabled.
 
-## Acceptance
-Check English and Chinese home/work/research pages at 320, 390, 820 and 1440px; verify no horizontal overflow, image decoding, keyboard navigation, filter state, deep links, original MP4 playback and no-script links. Inspect screenshots rather than relying on pass counts alone. Compare asset hashes when replacing or publishing original evidence.
+## Assets and implementation
+`assets/portfolio-cinema.css` and `assets/portfolio-cinema.js` extend the existing static architecture. `assets/cinema/` contains three lightweight decorative layers. Do not replace evidence media with concept renders. Preserve the original 31.44-second Atlas MP4 and all existing source figures.
 
-## V11 media and navigation refinements
-- Use full-frame original covers and real MP4 links for idle recordings; open the video on explicit request. Do not show a wall of blank or buffering players.
-- Selected shooter footage: 20 seconds of M4 combat/reloads and 8 seconds of facility interaction, both from an actual Windows packaged build. Clearly label automated inputs, normal speed, silent capture, and incomplete playthrough.
-- Retain the four earlier shooter screenshots in an expandable evidence section. Do not mix their completion result with this recording session.
-- Exclude footage whose public-source records remain incomplete. Rendered video publication is not permission to distribute raw 3D models, textures or source projects.
-- Keep category navigation compact on mobile, with a swipeable sub-navigation row, visible focus states and functioning deep links.
-- CSS ambient breathing stops in hidden tabs and for reduced-motion users; no continuous canvas/WebGL scene is used for decoration.
+## Verification
+Compare real browser captures against the approved composition at 1448×1086 and test 320/390/820px layouts. Verify live video playback, deep links, filters, language switching, no-script fallbacks and image sources. Tests are functional evidence, not an automatic aesthetic score.

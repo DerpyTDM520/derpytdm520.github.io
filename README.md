@@ -19,3 +19,6 @@ The local AI workbench covers inference, encrypted retrieval, MCP tools, image-t
 ## November 2026 refinement
 
 The V11 light-field presentation in `assets/portfolio-v11.css` and `assets/portfolio-v11.js` refines the existing static V10 components. All older source imagery and the original 31.44-second mobile recording remain unchanged. Two selected, silent Unreal gameplay excerpts and their source ranges/hashes are in `assets/media/shooter-gameplay/`; creator notices are linked from the video cards to `asset-credits.html#shooter-gameplay-credits`. The unreleased game and its automated development pipeline were not restarted to create these edits.
+
+## Cinematic presentation
+The native HTML/CSS implementation follows the approved cinematic portfolio concept. Three project panels and selected cards link to authentic recordings. Decorative background artwork is separated from project evidence and credited on `asset-credits.html#cinematic-art`. Existing media files remain unchanged.
